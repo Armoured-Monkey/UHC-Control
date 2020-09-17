@@ -1,0 +1,46 @@
+{
+    "display": {
+        "title": "UHC Control v1.0.0+",
+        "description": [
+			{
+				"text":"This pack allows the configuration of a UHC. To set up the pack use",
+				"color":"dark_aqua"
+			},
+			{
+				"text":" /function uhc:setup",
+				"color":"light_purple"
+			},
+			{
+				"text":" and use the book to configure the options. To safely uninstall the pack use",
+				"color":"dark_aqua"
+			},
+			{
+				"text":" /function uhc:uninstall",
+				"color":"light_purple"
+			},
+			{
+				"text":". To stop a UHC mid-game use",
+				"color":"dark_aqua"
+			},
+			{
+				"text":" /function uhc:stop",
+				"color":"light_purple"
+			},
+			{
+				"text":". Please note the the UHC cannot be resumed.",
+				"color":"dark_aqua"
+			}
+		],
+        "icon": {
+            "item": "minecraft:enchanted_golden_apple"
+        },
+        "announce_to_chat": false,
+        "show_toast": false
+    },
+    "parent": "global:armouredmonkey",
+    "criteria": {
+        "trigger": {
+            "trigger": "minecraft:tick"
+        }
+    }
+}
