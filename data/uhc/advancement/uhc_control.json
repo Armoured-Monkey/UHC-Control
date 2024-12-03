@@ -1,0 +1,57 @@
+{
+    "display": {
+        "title": "UHC Control            ",
+        "description": [
+            "",
+            {
+                "text": "This data pack allows the configuration of an UHC event.",
+                "color": "#e25903"
+            },
+            "\n\n",
+            {
+                "text": "Run ",
+                "color": "#e25903"
+            },
+            {
+                "text": "/function uhc:admin/setup",
+                "color": "#7f3202"
+            },
+            {
+                "text": " to setup the UHC and obtain the ",
+                "color": "#e25903"
+            },
+            {
+                "text": "Control Book. ",
+                "color": "#d9b35c"
+            },
+            {
+                "text": "Admins should be in Creative Mode to have access to all settings.",
+                "color": "#e25903"
+            },
+            "\n\n",
+            {
+                "text": "To safely uninstall the pack run ",
+                "color": "#e25903"
+            }, 
+            {
+                "text": "/function uhc:admin/uninstall",
+                "color": "#7f3202"
+            },
+            {
+                "text": " at any time.",
+                "color": "#e25903"
+            }
+        ],
+        "icon": {
+            "id": "minecraft:enchanted_golden_apple"
+        },
+        "announce_to_chat": false,
+        "show_toast": false
+    },
+    "parent": "armouredmonkey:root",
+    "criteria": {
+        "trigger": {
+            "trigger": "minecraft:tick"
+        }
+    }
+}

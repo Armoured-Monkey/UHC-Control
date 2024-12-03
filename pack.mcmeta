@@ -1,0 +1,19 @@
+{
+	"pack": {
+		"pack_format": 48,
+		"description": "UHC Control by ArmouredMonkey",
+		"supported_formats": {"min_inclusive":48, "max_inclusive": 61}
+	},
+	"overlays": {
+		"entries": [
+			{
+				"formats": {"min_inclusive":49, "max_inclusive": 61},
+				"directory": "overlay_49"
+			},
+			{
+				"formats": {"min_inclusive":58, "max_inclusive": 61},
+				"directory": "overlay_58"
+			}
+		]
+	}
+}
