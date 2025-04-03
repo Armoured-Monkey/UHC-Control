@@ -1,16 +1,16 @@
 playsound minecraft:ui.button.click master @p ~ ~ ~
 team join uhc.1 @r[team=uhc.0,limit=2] 
+team join uhc.2 @r[team=uhc.0,limit=2] 
+team join uhc.3 @r[team=uhc.0,limit=2] 
 team join uhc.4 @r[team=uhc.0,limit=2] 
+team join uhc.5 @r[team=uhc.0,limit=2] 
 team join uhc.6 @r[team=uhc.0,limit=2] 
 team join uhc.7 @r[team=uhc.0,limit=2] 
-team join uhc.3 @r[team=uhc.0,limit=2] 
-team join uhc.11 @r[team=uhc.0,limit=2] 
 team join uhc.8 @r[team=uhc.0,limit=2] 
-team join uhc.2 @r[team=uhc.0,limit=2] 
-team join uhc.12 @r[team=uhc.0,limit=2] 
 team join uhc.9 @r[team=uhc.0,limit=2] 
-team join uhc.5 @r[team=uhc.0,limit=2] 
-team join uhc.10 @r[team=uhc.0,limit=2]
+team join uhc.10 @r[team=uhc.0,limit=2] 
+team join uhc.11 @r[team=uhc.0,limit=2] 
+team join uhc.12 @r[team=uhc.0,limit=2]
 scoreboard players set @a[team=uhc.1] uhc.team 1 
 scoreboard players set @a[team=uhc.2] uhc.team 2
 scoreboard players set @a[team=uhc.3] uhc.team 3 
