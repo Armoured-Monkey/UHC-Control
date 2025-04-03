@@ -15,12 +15,15 @@ tag @a[team=uhc.spec] add uhc.spectator
 gamemode spectator @a[team=uhc.spec]
 
 scoreboard players set minutes uhc.timer -1
+scoreboard players set Timer uhc.stats -1
+scoreboard players set marker uhc.timer -1
+scoreboard players set border_status uhc.timer -1
 time set 0
 
 execute as @a[tag=uhc.player] run attribute @s minecraft:movement_speed base set 0.10000000149011612
 execute as @a[tag=uhc.player] run attribute @s minecraft:jump_strength base set 0.41999998688697815
 effect give @a[tag=uhc.player] minecraft:regeneration 5 100 true 
-effect give @a[tag=uhc.player] minecraft:saturation 5 100 true 
+effect give @a[tag=uhc.player] minecraft:saturation 3 1 true 
 title @a title {"text":"GO!","color":"#00B000"}
 execute at @a run playsound minecraft:block.note_block.pling master @a ~ ~ ~ 1 1
 
@@ -32,12 +35,9 @@ effect give @a[team=uhc.spec] night_vision infinite 1 true
 scoreboard objectives setdisplay sidebar.team.gray uhc.stats
 execute if score stats_scoreboard uhc.config matches 1 run scoreboard objectives setdisplay sidebar uhc.stats
 
-
+# Remove lobby and display entities
 execute positioned 0 255 0 run fill ~-25 250 ~-25 ~24 253 ~24 air
 kill @e[tag=uhc.display]
-
-# Setting printout in chat
-execute as @a if score print uhc.config matches 1 run function uhc:admin/setting_printout
 
 # Schedule timings
 schedule function uhc:timer/second 1t

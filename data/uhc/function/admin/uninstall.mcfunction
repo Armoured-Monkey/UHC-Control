@@ -2,7 +2,7 @@
 
 # Remove Scheduled Functions
 schedule clear uhc:timer/second
-schedule clear uhc:lobbytick
+schedule clear uhc:lobby_second
 schedule clear uhc:timer/minute
 
 # Set lobby to air
@@ -40,6 +40,18 @@ scoreboard objectives remove uhc.stats
 # Remove Tags for online Players
 tag @a remove uhc.player
 tag @a remove uhc.spectator
+
+# Delete Storage
+data remove storage minecraft:uhc_control announce_advancements
+data remove storage minecraft:uhc_control fire_spread
+data remove storage minecraft:uhc_control friendly_fire
+data remove storage minecraft:uhc_control patrol_spawning
+data remove storage minecraft:uhc_control phantoms_spawn
+data remove storage minecraft:uhc_control raids
+data remove storage minecraft:uhc_control regeneration
+data remove storage minecraft:uhc_control traders_spawn
+data remove storage minecraft:uhc_control eternal
+data remove storage minecraft:uhc_control expansions
 
 # Announce
 tellraw @s {"text":"                                                                                ","color":"#7f3202","strikethrough":true}

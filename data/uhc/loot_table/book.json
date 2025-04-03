@@ -130,13 +130,13 @@
 											"hoverEvent": {
 												"action": "show_text",
 												"contents": [
-													"Blue"
+													"Team 1 - Blue"
 												]
 											}
 										},
 										{
 											"text": " ⬛",
-											"color": "dark_aqua",
+											"color": "green",
 											"clickEvent": {
 												"action": "run_command",
 												"value": "/trigger uhc.team set 2"
@@ -144,49 +144,7 @@
 											"hoverEvent": {
 												"action": "show_text",
 												"contents": [
-													"Dark Aqua"
-												]
-											}
-										},
-										{
-											"text": " ⬛",
-											"color": "dark_blue",
-											"clickEvent": {
-												"action": "run_command",
-												"value": "/trigger uhc.team set 3"
-											},
-											"hoverEvent": {
-												"action": "show_text",
-												"contents": [
-													"Dark Blue"
-												]
-											}
-										},
-										{
-											"text": " ⬛",
-											"color": "dark_green",
-											"clickEvent": {
-												"action": "run_command",
-												"value": "/trigger uhc.team set 4"
-											},
-											"hoverEvent": {
-												"action": "show_text",
-												"contents": [
-													"Dark Green"
-												]
-											}
-										},
-										{
-											"text": " ⬛",
-											"color": "dark_purple",
-											"clickEvent": {
-												"action": "run_command",
-												"value": "/trigger uhc.team set 5"
-											},
-											"hoverEvent": {
-												"action": "show_text",
-												"contents": [
-													"Dark Purple"
+													"Team 2 - Green"
 												]
 											}
 										},
@@ -195,12 +153,54 @@
 											"color": "dark_red",
 											"clickEvent": {
 												"action": "run_command",
+												"value": "/trigger uhc.team set 3"
+											},
+											"hoverEvent": {
+												"action": "show_text",
+												"contents": [
+													"Team 3 - Dark Red"
+												]
+											}
+										},
+										{
+											"text": " ⬛",
+											"color": "yellow",
+											"clickEvent": {
+												"action": "run_command",
+												"value": "/trigger uhc.team set 4"
+											},
+											"hoverEvent": {
+												"action": "show_text",
+												"contents": [
+													"Team 4 - Yellow"
+												]
+											}
+										},
+										{
+											"text": " ⬛",
+											"color": "aqua",
+											"clickEvent": {
+												"action": "run_command",
+												"value": "/trigger uhc.team set 5"
+											},
+											"hoverEvent": {
+												"action": "show_text",
+												"contents": [
+													"Team 5 - Aqua"
+												]
+											}
+										},
+										{
+											"text": " ⬛",
+											"color": "gold",
+											"clickEvent": {
+												"action": "run_command",
 												"value": "/trigger uhc.team set 6"
 											},
 											"hoverEvent": {
 												"action": "show_text",
 												"contents": [
-													"Dark Red"
+													"Team 6 - Gold"
 												]
 											}
 										},
@@ -221,7 +221,7 @@
 										"\n",
 										{
 											"text": "    ⬛",
-											"color": "gold",
+											"color": "light_purple",
 											"clickEvent": {
 												"action": "run_command",
 												"value": "/trigger uhc.team set 7"
@@ -229,13 +229,13 @@
 											"hoverEvent": {
 												"action": "show_text",
 												"contents": [
-													"Gold"
+													"Team 7 - Light Purple"
 												]
 											}
 										},
 										{
 											"text": " ⬛",
-											"color": "green",
+											"color": "dark_green",
 											"clickEvent": {
 												"action": "run_command",
 												"value": "/trigger uhc.team set 8"
@@ -243,21 +243,7 @@
 											"hoverEvent": {
 												"action": "show_text",
 												"contents": [
-													"Green"
-												]
-											}
-										},
-										{
-											"text": " ⬛",
-											"color": "light_purple",
-											"clickEvent": {
-												"action": "run_command",
-												"value": "/trigger uhc.team set 9"
-											},
-											"hoverEvent": {
-												"action": "show_text",
-												"contents": [
-													"Light Purple"
+													"Team 8 - Dark Green"
 												]
 											}
 										},
@@ -266,18 +252,32 @@
 											"color": "red",
 											"clickEvent": {
 												"action": "run_command",
-												"value": "/trigger uhc.team set 10"
+												"value": "/trigger uhc.team set 9"
 											},
 											"hoverEvent": {
 												"action": "show_text",
 												"contents": [
-													"Red"
+													"Team 9 - Red"
 												]
 											}
 										},
 										{
 											"text": " ⬛",
-											"color": "aqua",
+											"color": "dark_purple",
+											"clickEvent": {
+												"action": "run_command",
+												"value": "/trigger uhc.team set 10"
+											},
+											"hoverEvent": {
+												"action": "show_text",
+												"contents": [
+													"Team 10 - Dark Purple"
+												]
+											}
+										},
+										{
+											"text": " ⬛",
+											"color": "dark_aqua",
 											"clickEvent": {
 												"action": "run_command",
 												"value": "/trigger uhc.team set 11"
@@ -285,12 +285,12 @@
 											"hoverEvent": {
 												"action": "show_text",
 												"contents": [
-													"Aqua"
+													"Team 11 - Dark Aqua"
 												]
 											}
 										},{
 											"text": " ⬛",
-											"color": "yellow",
+											"color": "dark_blue",
 											"clickEvent": {
 												"action": "run_command",
 												"value": "/trigger uhc.team set 12"
@@ -298,7 +298,7 @@
 											"hoverEvent": {
 												"action": "show_text",
 												"contents": [
-													"Yellow"
+													"Team 12 - Dark Blue"
 												]
 											}
 										},
@@ -391,6 +391,21 @@
 												"action": "run_command",
 												"value": "/function uhc:teams/picker_disable"
 											}
+										},
+										"\n\n",
+										{
+											"text": "Remove All Teams",
+											"color": "#7f3202",
+											"hoverEvent": {
+												"action": "show_text",
+												"contents": [
+													"Removes players from all teams. Leaves people in the Spectator team alone."
+												]
+											},
+											"clickEvent": {
+												"action": "run_command",
+												"value": "/function uhc:teams/remove_all_teams"
+											}
 										}
 									]
 								},
@@ -407,40 +422,7 @@
 										},
 										"\n\n",
 										{
-											"text": "Print Config:",
-											"color": "black",
-											"hoverEvent": {
-												"action": "show_text",
-												"value": "Prints the config options when the game starts. Default: No/False. Click here to print the current config in chat for just admins."
-											},
-											"clickEvent": {
-												"action": "run_command",
-												"value": "/execute as @a[gamemode=creative] run function uhc:admin/setting_printout"
-											}
-										},
-										{
-											"text": " Yes",
-											"color": "green",
-											"clickEvent": {
-												"action": "run_command",
-												"value": "/function uhc:options/print_config_true"
-											}
-										},
-										{
-											"text": "/",
-											"color": "black"
-										},
-										{
-											"text": "No",
-											"color": "red",
-											"clickEvent": {
-												"action": "run_command",
-												"value": "/function uhc:options/print_config_false"
-											}
-										},
-										"\n\n",
-										{
-											"text": "       Gamerules",
+											"text": "      Game Rules",
 											"color": "#7f3202"
 										},
 										"\n",
@@ -457,7 +439,7 @@
 											"color": "green",
 											"clickEvent": {
 												"action": "run_command",
-												"value": "/function uhc:options/announce_advancements_true"
+												"value": "/function uhc:options/game_rules/announce_advancements_true"
 											}
 										},
 										{
@@ -469,7 +451,7 @@
 											"color": "red",
 											"clickEvent": {
 												"action": "run_command",
-												"value": "/function uhc:options/announce_advancements_false"
+												"value": "/function uhc:options/game_rules/announce_advancements_false"
 											}
 										},
 										"\n",
@@ -478,7 +460,7 @@
 											"color": "black",
 											"hoverEvent": {
 												"action": "show_text",
-												"value": "Fire can spread. Default: Yes/True."
+												"value": "Fire can spread. Default: No/False."
 											}
 										},
 										{
@@ -486,7 +468,7 @@
 											"color": "green",
 											"clickEvent": {
 												"action": "run_command",
-												"value": "/function uhc:options/fire_tick_true"
+												"value": "/function uhc:options/game_rules/fire_tick_true"
 											}
 										},
 										{
@@ -498,7 +480,7 @@
 											"color": "red",
 											"clickEvent": {
 												"action": "run_command",
-												"value": "/function uhc:options/fire_tick_false"
+												"value": "/function uhc:options/game_rules/fire_tick_false"
 											}
 										},
 										"\n",
@@ -515,7 +497,7 @@
 											"color": "green",
 											"clickEvent": {
 												"action": "run_command",
-												"value": "/function uhc:options/friendly_fire_true"
+												"value": "/function uhc:options/game_rules/friendly_fire_true"
 											}
 										},
 										{
@@ -527,7 +509,7 @@
 											"color": "red",
 											"clickEvent": {
 												"action": "run_command",
-												"value": "/function uhc:options/friendly_fire_false"
+												"value": "/function uhc:options/game_rules/friendly_fire_false"
 											}
 										},
 										"\n",
@@ -544,7 +526,7 @@
 											"color": "green",
 											"clickEvent": {
 												"action": "run_command",
-												"value": "/function uhc:options/patrol_spawning_true"
+												"value": "/function uhc:options/game_rules/patrol_spawning_true"
 											}
 										},
 										{
@@ -556,7 +538,7 @@
 											"color": "red",
 											"clickEvent": {
 												"action": "run_command",
-												"value": "/function uhc:options/patrol_spawning_false"
+												"value": "/function uhc:options/game_rules/patrol_spawning_false"
 											}
 										},
 										"\n",
@@ -573,7 +555,7 @@
 											"color": "green",
 											"clickEvent": {
 												"action": "run_command",
-												"value": "/function uhc:options/phantom_spawning_true"
+												"value": "/function uhc:options/game_rules/phantom_spawning_true"
 											}
 										},
 										{
@@ -585,7 +567,7 @@
 											"color": "red",
 											"clickEvent": {
 												"action": "run_command",
-												"value": "/function uhc:options/phantom_spawning_false"
+												"value": "/function uhc:options/game_rules/phantom_spawning_false"
 											}
 										},
 										"\n",
@@ -602,7 +584,7 @@
 											"color": "green",
 											"clickEvent": {
 												"action": "run_command",
-												"value": "/function uhc:options/raids_true"
+												"value": "/function uhc:options/game_rules/raids_true"
 											}
 										},
 										{
@@ -614,7 +596,7 @@
 											"color": "red",
 											"clickEvent": {
 												"action": "run_command",
-												"value": "/function uhc:options/raids_false"
+												"value": "/function uhc:options/game_rules/raids_false"
 											}
 										},
 										"\n",
@@ -623,7 +605,7 @@
 											"color": "black",
 											"hoverEvent": {
 												"action": "show_text",
-												"value": "Players regenerate health from eating. Default: No/False."
+												"value": "Players naturally regenerate health from their food. Default: No/False."
 											}
 										},
 										{
@@ -631,7 +613,7 @@
 											"color": "green",
 											"clickEvent": {
 												"action": "run_command",
-												"value": "/function uhc:options/regeneration_true"
+												"value": "/function uhc:options/game_rules/regeneration_true"
 											}
 										},
 										{
@@ -643,7 +625,7 @@
 											"color": "red",
 											"clickEvent": {
 												"action": "run_command",
-												"value": "/function uhc:options/regeneration_false"
+												"value": "/function uhc:options/game_rules/regeneration_false"
 											}
 										},
 										"\n",
@@ -660,7 +642,7 @@
 											"color": "green",
 											"clickEvent": {
 												"action": "run_command",
-												"value": "/function uhc:options/trader_true"
+												"value": "/function uhc:options/game_rules/trader_true"
 											}
 										},
 										{
@@ -672,7 +654,7 @@
 											"color": "red",
 											"clickEvent": {
 												"action": "run_command",
-												"value": "/function uhc:options/trader_false"
+												"value": "/function uhc:options/game_rules/trader_false"
 											}
 										}
 									]
@@ -732,6 +714,56 @@
 											"clickEvent": {
 												"action": "run_command",
 												"value": "/function uhc:options/marker/60"
+											}
+										},
+										"\n\n",
+										{
+											"text": " Border Size Updates",
+											"color": "#7f3202",
+											"clickEvent": {
+												"action": "copy_to_clipboard",
+												"value": "/scoreboard players set border_status uhc.config <minutes>"
+											},
+											"hoverEvent": {
+												"action": "show_text",
+												"value": "Updates in chat for the size of the world border. Click here to enter custom amount of minutes, copies command to clipboard."
+											}
+										},
+										"\n",
+										{
+											"text": "      5",
+											"color": "#d9b35c",
+											"clickEvent": {
+												"action": "run_command",
+												"value": "/function uhc:options/border_updates/5"
+											}
+										},
+										{
+											"text": "  10",
+											"color": "#d9b35c",
+											"clickEvent": {
+												"action": "run_command",
+												"value": "/function uhc:options/border_updates/10"
+											}
+										},
+										{
+											"text": "  15",
+											"color": "#d9b35c",
+											"clickEvent": {
+												"action": "run_command",
+												"value": "/function uhc:options/border_updates/15"
+											}
+										},
+										{
+											"text": "  ✗",
+											"color": "#d9b35c",
+											"hoverEvent": {
+												"action": "show_text",
+												"value": "No World Border Status Updates"
+											},
+											"clickEvent": {
+												"action": "run_command",
+												"value": "/function uhc:options/border_updates/clear"
 											}
 										},
 										"\n\n",

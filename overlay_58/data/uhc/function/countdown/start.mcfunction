@@ -15,12 +15,15 @@ tag @a[team=uhc.spec] add uhc.spectator
 gamemode spectator @a[team=uhc.spec]
 
 scoreboard players set minutes uhc.timer -1
+scoreboard players set Timer uhc.stats -1
+scoreboard players set marker uhc.timer -1
+scoreboard players set border_status uhc.timer -1
 time set 0
 
 execute as @a[tag=uhc.player] run attribute @s minecraft:movement_speed base reset
 execute as @a[tag=uhc.player] run attribute @s minecraft:jump_strength base reset
 effect give @a[tag=uhc.player] minecraft:regeneration 5 100 true 
-effect give @a[tag=uhc.player] minecraft:saturation 5 100 true 
+effect give @a[tag=uhc.player] minecraft:saturation 3 1 true 
 title @a title {"text":"GO!","color":"#00B000"}
 execute at @a run playsound minecraft:block.note_block.pling master @a ~ ~ ~ 1 1
 

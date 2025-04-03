@@ -5,13 +5,14 @@
 scoreboard players add minutes uhc.timer 1
 scoreboard players add Timer uhc.stats 1
 scoreboard players add marker uhc.timer 1
+scoreboard players add border_status uhc.timer 1
 
 # Gentleman's Rule
 execute if score GRule uhc.config = minutes uhc.timer run schedule function uhc:timer/gr_over 5s
 
 # World Border
 execute store result score Current uhc.border run worldborder get
-execute if score shrink uhc.border = minutes uhc.timer run tellraw @a {"text":"World border has started shrinking", "color":"#E25903"}
+execute if score shrink uhc.border = minutes uhc.timer run tellraw @a {"text":"World border has started shrinking.", "color":"#E25903"}
 
 # Eternal Time
 # Day - Night uhc.timer = 0
@@ -52,8 +53,13 @@ execute if score shrink uhc.border = minutes uhc.timer if score duration uhc.bor
 execute if score shrink uhc.border = minutes uhc.timer if score duration uhc.border matches 100 if score finish uhc.border matches 16 run worldborder set 16 6000
 ##### Temp #####
 
-# Detect markers
+# Detect markers and border status updates
 execute if score marker uhc.timer = marker uhc.config run function uhc:timer/time_marker
+execute if score shrink uhc.border <= minutes uhc.timer if score border_status uhc.timer = border_status uhc.config run function uhc:timer/border_status_update
+
+# Update Stats scoreboard
+execute store result score AlivePlayers uhc.stats if entity @a[tag=uhc.player]
+execute store result score Spectators uhc.stats if entity @a[tag=uhc.spectator]
 
 # Schedule
 schedule function uhc:timer/minute 60s
