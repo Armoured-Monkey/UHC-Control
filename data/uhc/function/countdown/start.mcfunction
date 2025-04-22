@@ -8,11 +8,11 @@ gamerule fallDamage true
 # Set everyone in team 0 to spectator team
 team join uhc.spec @a[team=uhc.0]
 
-# Team 11 = Spectator
-gamemode spectator @a[team=uhc.spec]
-
 tag @a[team=!uhc.spec] add uhc.player
 tag @a[team=uhc.spec] add uhc.spectator
+
+# Team 11 = Spectator
+gamemode spectator @a[team=uhc.spec]
 
 scoreboard players set minutes uhc.timer -1
 scoreboard players set Timer uhc.stats -1
@@ -20,8 +20,7 @@ scoreboard players set marker uhc.timer -1
 scoreboard players set border_status uhc.timer -1
 time set 0
 
-execute as @a[tag=uhc.player] run attribute @s minecraft:generic.movement_speed base set 0.10000000149011612
-execute as @a[tag=uhc.player] run attribute @s minecraft:generic.jump_strength base set 0.41999998688697815
+execute as @a[tag=uhc.player] run function uhc:reset_attributes
 effect give @a[tag=uhc.player] minecraft:regeneration 5 100 true 
 effect give @a[tag=uhc.player] minecraft:saturation 3 1 true 
 title @a title {"text":"GO!","color":"#00B000"}
@@ -35,7 +34,7 @@ effect give @a[team=uhc.spec] night_vision infinite 1 true
 scoreboard objectives setdisplay sidebar.team.gray uhc.stats
 execute if score stats_scoreboard uhc.config matches 1 run scoreboard objectives setdisplay sidebar uhc.stats
 
-
+# Remove lobby and display entities
 execute positioned 0 255 0 run fill ~-25 250 ~-25 ~24 253 ~24 air
 kill @e[tag=uhc.display]
 
