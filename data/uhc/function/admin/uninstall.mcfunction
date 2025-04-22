@@ -37,9 +37,13 @@ scoreboard objectives remove uhc.interface
 scoreboard objectives remove uhc.config
 scoreboard objectives remove uhc.stats
 
+# Reset attributes for online players
+execute as @a run function uhc:reset_attributes
+
 # Remove Tags for online Players
 tag @a remove uhc.player
 tag @a remove uhc.spectator
+tag @a remove uhc.attributes_reset
 
 # Delete Storage
 data remove storage minecraft:uhc_control announce_advancements
