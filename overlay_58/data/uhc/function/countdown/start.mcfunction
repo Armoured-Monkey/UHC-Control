@@ -39,9 +39,6 @@ execute if score stats_scoreboard uhc.config matches 1 run scoreboard objectives
 execute positioned 0 255 0 run fill ~-25 250 ~-25 ~24 253 ~24 air
 kill @e[tag=uhc.display]
 
-# Setting printout in chat
-execute as @a if score print uhc.config matches 1 run function uhc:admin/setting_printout
-
 # Schedule timings
 schedule function uhc:timer/second 1t
 schedule function uhc:timer/minute 1t
