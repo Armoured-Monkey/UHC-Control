@@ -6,7 +6,6 @@ team join uhc.spec @s
 tag @s remove uhc.player
 tag @s add uhc.spectator
 
-effect give @s night_vision infinite 1 true
 scoreboard players set @s uhc.deaths 0
 
 # Run death sound for all players
