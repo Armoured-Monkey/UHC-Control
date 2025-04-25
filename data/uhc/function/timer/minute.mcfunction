@@ -55,7 +55,7 @@ execute if score shrink uhc.border = minutes uhc.timer if score duration uhc.bor
 
 # Detect markers and border status updates
 execute if score marker uhc.timer = marker uhc.config run function uhc:timer/time_marker
-execute if score shrink uhc.border >= minutes uhc.timer if score border_status uhc.timer = border_status uhc.config run function uhc:timer/border_status_update
+execute if score shrink uhc.border <= minutes uhc.timer if score border_status uhc.timer = border_status uhc.config run function uhc:timer/border_status_update
 
 # Update Stats scoreboard
 execute store result score AlivePlayers uhc.stats if entity @a[tag=uhc.player]
