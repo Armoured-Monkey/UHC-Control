@@ -485,7 +485,7 @@
 										},
 										"\n",
 										{
-											"text": "Friendly Fire:",
+											"text": "Hurt Teammates:",
 											"color": "black",
 											"hoverEvent": {
 												"action": "show_text",
