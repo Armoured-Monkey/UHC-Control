@@ -2,7 +2,7 @@
 
 # Remove Scheduled Functions
 schedule clear uhc:timer/second
-schedule clear uhc:lobby_second
+schedule clear uhc:lobby/second
 schedule clear uhc:timer/minute
 
 # Set lobby to air
