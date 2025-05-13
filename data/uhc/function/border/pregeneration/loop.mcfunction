@@ -7,5 +7,7 @@ execute as @a[tag=uhc.pregen] at @s if score pregendirection uhc.pregen matches 
 
 scoreboard players add pregenmove uhc.pregen 1
 
+title @a actionbar ["",{"text":"Pregeneration in Progress...","color":"#E25903"}]
+
 execute unless score pregenset uhc.pregen > pregenmax uhc.pregen run schedule function uhc:border/pregeneration/loop 5s
 execute if score pregenset uhc.pregen > pregenmax uhc.pregen run function uhc:border/pregeneration/final

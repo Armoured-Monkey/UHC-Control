@@ -20,6 +20,6 @@ data modify storage uhc:pregeneration gamemode set from entity @a[tag=uhc.pregen
 gamemode spectator @a[tag=uhc.pregen]
 teleport @a[tag=uhc.pregen] ~ 300 ~
 
-tellraw @a ["",{"text":"Pregen starting. This could take a while...\n ","color":"green"}]
+title @a actionbar ["",{"text":"Pregeneration Starting","color":"#E25903"}]
 
 function uhc:border/pregeneration/loop
