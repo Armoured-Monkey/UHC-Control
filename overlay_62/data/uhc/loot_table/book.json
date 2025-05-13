@@ -30,7 +30,7 @@
                       },
                       "hover_event": {
                         "action": "show_text",
-                        "text": "Click on title to open linktree. Click options below to jump to page. Hover over text to get more information. Press Start once settings have been chosen and all players have been asigned to a team."
+                        "value": "Click on title to open linktree. \n\nClick options below to jump to page. Hover over text to get more information. \n\nPress Start once settings have been chosen and all players have been asigned to a team."
                       }
                     },
                     "\n\n",
@@ -89,7 +89,7 @@
                       },
                       "hover_event": {
                         "action": "show_text",
-                        "text": [
+                        "value": [
                           "Only press Start once all configurations have been made and all players are assigned to a team."
                         ]
                       }
@@ -109,7 +109,7 @@
                       "color": "#e25903",
                       "hover_event": {
                         "action": "show_text",
-                        "text": [
+                        "value": [
                           "All players can use the team selector to join, leave or change their team. Admins can use the Randomise Teams buttons to create random teams of the selected number."
                         ]
                       }
@@ -129,7 +129,7 @@
                       },
                       "hover_event": {
                         "action": "show_text",
-                        "text": [
+                        "value": [
                           "Team 1 - Blue"
                         ]
                       }
@@ -143,7 +143,7 @@
                       },
                       "hover_event": {
                         "action": "show_text",
-                        "text": [
+                        "value": [
                           "Team 2 - Green"
                         ]
                       }
@@ -157,7 +157,7 @@
                       },
                       "hover_event": {
                         "action": "show_text",
-                        "text": [
+                        "value": [
                           "Team 3 - Dark Red"
                         ]
                       }
@@ -171,7 +171,7 @@
                       },
                       "hover_event": {
                         "action": "show_text",
-                        "text": [
+                        "value": [
                           "Team 4 - Yellow"
                         ]
                       }
@@ -185,7 +185,7 @@
                       },
                       "hover_event": {
                         "action": "show_text",
-                        "text": [
+                        "value": [
                           "Team 5 - Aqua"
                         ]
                       }
@@ -199,7 +199,7 @@
                       },
                       "hover_event": {
                         "action": "show_text",
-                        "text": [
+                        "value": [
                           "Team 6 - Gold"
                         ]
                       }
@@ -213,7 +213,7 @@
                       },
                       "hover_event": {
                         "action": "show_text",
-                        "text": [
+                        "value": [
                           "Leave Team"
                         ]
                       }
@@ -228,7 +228,7 @@
                       },
                       "hover_event": {
                         "action": "show_text",
-                        "text": [
+                        "value": [
                           "Team 7 - Light Purple"
                         ]
                       }
@@ -242,7 +242,7 @@
                       },
                       "hover_event": {
                         "action": "show_text",
-                        "text": [
+                        "value": [
                           "Team 8 - Dark Green"
                         ]
                       }
@@ -256,7 +256,7 @@
                       },
                       "hover_event": {
                         "action": "show_text",
-                        "text": [
+                        "value": [
                           "Team 9 - Red"
                         ]
                       }
@@ -270,7 +270,7 @@
                       },
                       "hover_event": {
                         "action": "show_text",
-                        "text": [
+                        "value": [
                           "Team 10 - Dark Purple"
                         ]
                       }
@@ -284,7 +284,7 @@
                       },
                       "hover_event": {
                         "action": "show_text",
-                        "text": [
+                        "value": [
                           "Team 11 - Dark Aqua"
                         ]
                       }
@@ -298,7 +298,7 @@
                       },
                       "hover_event": {
                         "action": "show_text",
-                        "text": [
+                        "value": [
                           "Team 12 - Dark Blue"
                         ]
                       }
@@ -312,7 +312,7 @@
                       },
                       "hover_event": {
                         "action": "show_text",
-                        "text": [
+                        "value": [
                           "Spectator"
                         ]
                       }
@@ -323,7 +323,7 @@
                       "color": "#7f3202",
                       "hover_event": {
                         "action": "show_text",
-                        "text": [
+                        "value": [
                           "Click number below to select amount of players on each team."
                         ]
                       }
@@ -367,7 +367,7 @@
                       "color": "#7f3202",
                       "hover_event": {
                         "action": "show_text",
-                        "text": [
+                        "value": [
                           "Toggle if players are able to use the team picker or not. It is disabled by default."
                         ]
                       }
@@ -399,7 +399,7 @@
                       "color": "#7f3202",
                       "hover_event": {
                         "action": "show_text",
-                        "text": [
+                        "value": [
                           "Removes players from all teams. Leaves people in the Spectator team alone."
                         ]
                       },
@@ -418,7 +418,7 @@
                       "color": "#e25903",
                       "hover_event": {
                         "action": "show_text",
-                        "text": "Hover over each option for more details. Use the Yes/No toggle to choose your settings. An actionbar message will show when you change a setting."
+                        "value": "Hover over each option for more details. Use the Yes/No toggle to choose your settings. An actionbar message will show when you change a setting."
                       }
                     },
                     "\n\n",
