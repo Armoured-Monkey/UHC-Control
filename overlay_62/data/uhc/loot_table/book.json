@@ -486,7 +486,7 @@
                     },
                     "\n",
                     {
-                      "text": "Hurt Teammates:",
+                      "text": "Hurt Own Team:",
                       "color": "black",
                       "hover_event": {
                         "action": "show_text",
