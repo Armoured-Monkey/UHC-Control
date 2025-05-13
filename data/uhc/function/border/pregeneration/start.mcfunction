@@ -16,9 +16,9 @@ scoreboard players set pregenmod uhc.pregen 2
 scoreboard players operation pregenmodulus uhc.pregen = pregenmax uhc.pregen
 scoreboard players operation pregenmodulus uhc.pregen %= pregenmod uhc.pregen
 
-data modify storage uhc:pregeneration gamemode set from entity @a[tag=pregen,limit=1] playerGameType
-gamemode spectator @a[tag=pregen]
-teleport @a[tag=pregen] ~ 300 ~
+data modify storage uhc:pregeneration gamemode set from entity @a[tag=uhc.pregen,limit=1] playerGameType
+gamemode spectator @a[tag=uhc.pregen]
+teleport @a[tag=uhc.pregen] ~ 300 ~
 
 tellraw @a ["",{"text":"Pregen starting. This could take a while...\n ","color":"green"}]
 

@@ -1,5 +1,5 @@
 # Clear Scoreboards
-scoreboard objectives remove pregencount
+scoreboard objectives remove uhc.pregen
 
 # Clear Gamerule Changes
 gamerule spectatorsGenerateChunks false
@@ -9,12 +9,9 @@ gamerule doMobSpawning true
 
 # Reset Players
 teleport @a[tag=pregen] ~ 300 ~
-execute as @a[tag=pregen] if data storage vb:worldpregen {gamemode:0} run gamemode survival @s
-execute as @a[tag=pregen] if data storage vb:worldpregen {gamemode:1} run gamemode creative @s
-execute as @a[tag=pregen] if data storage vb:worldpregen {gamemode:2} run gamemode adventure @s
-data remove storage vb:worldpregen gamemode
-spreadplayers ~ ~ 0 1 false @a[tag=pregen]
-tag @a[tag=pregen] remove pregen
+gamemode creative @a[tag=uhc.pregen]
+spreadplayers ~ ~ 0 1 false @a[tag=uhc.pregen]
+tag @a[tag=uhc.pregen] remove uhc.pregen
 
 # Reset Worldborder to Default
 worldborder set 59999968

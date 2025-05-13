@@ -1,5 +1,5 @@
-scoreboard players set pregenmove pregencount 0
-execute if score pregendirection pregencount matches 2 run scoreboard players add pregenset pregencount 1
-execute if score pregendirection pregencount matches 4 run scoreboard players add pregenset pregencount 1
-scoreboard players add pregendirection pregencount 1
-execute if score pregendirection pregencount matches 5 run scoreboard players set pregendirection pregencount 1
+scoreboard players set pregenmove uhc.pregen 0
+execute if score pregendirection uhc.pregen matches 2 run scoreboard players add pregenset uhc.pregen 1
+execute if score pregendirection uhc.pregen matches 4 run scoreboard players add pregenset uhc.pregen 1
+scoreboard players add pregendirection uhc.pregen 1
+execute if score pregendirection uhc.pregen matches 5 run scoreboard players set pregendirection uhc.pregen 1
