@@ -117,7 +117,17 @@
                     "\n",
                     {
                       "text": "     Team Selector",
-                      "color": "#7f3202"
+                      "color": "#7f3202",
+                      "hover_event": {
+                        "action": "show_text",
+                        "value": [
+                          "Removes players from all teams. Leaves people in the Spectator team alone."
+                        ]
+                      },
+                      "click_event": {
+                        "action": "run_command",
+                        "command": "/function uhc:teams/remove_all_teams"
+                      }
                     },
                     "\n",
                     {
@@ -395,17 +405,34 @@
                     },
                     "\n\n",
                     {
-                      "text": "Remove All Teams",
+                      "text": "      Spectators",
                       "color": "#7f3202",
                       "hover_event": {
                         "action": "show_text",
                         "value": [
-                          "Removes players from all teams. Leaves people in the Spectator team alone."
+													"Toggle if players are able Spectate the game without the team picker being enabled. This adds options in the in-world lobby. It is disabled by default."
                         ]
-                      },
+                      }
+                    },
+                    "\n",
+                    {
+                      "text": "Enable",
+                      "color": "#d9b35c",
                       "click_event": {
                         "action": "run_command",
-                        "command": "/function uhc:teams/remove_all_teams"
+                        "command": "/function uhc:lobby/spectating/add_options"
+                      }
+                    },
+                    {
+                      "text": "/",
+                      "color": "black"
+                    },
+                    {
+                      "text": "Disable",
+                      "color": "#d9b35c",
+                      "click_event": {
+                        "action": "run_command",
+                        "command": "/function uhc:lobby/spectating/remove_options"
                       }
                     }
                   ]

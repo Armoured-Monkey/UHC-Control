@@ -1,0 +1,40 @@
+{
+    "criteria": {
+        "position": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "player": {
+                    "location": {
+                        "position": {
+                            "x": {
+                                "min": -23,
+                                "max": -22
+                            },
+                            "y": {
+                                "min": 251,
+                                "max": 252
+                            },
+                            "z": {
+                                "min": -23,
+                                "max": -22
+                            }
+                        }
+                    },
+                    "stepping_on": {
+                        "block": {
+                            "blocks": "minecraft:gold_block"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "position"
+        ]
+    ],
+    "rewards": {
+        "function": "uhc:lobby/spectating/join_spectator"
+    }
+}
