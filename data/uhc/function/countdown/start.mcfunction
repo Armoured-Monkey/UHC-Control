@@ -14,10 +14,13 @@ tag @a[team=uhc.spec] add uhc.spectator
 # Team 11 = Spectator
 gamemode spectator @a[team=uhc.spec]
 
+# Scoreboard settings
 scoreboard players set minutes uhc.timer -1
 scoreboard players set Timer uhc.stats -1
 scoreboard players set marker uhc.timer -1
 scoreboard players set border_status uhc.timer -1
+scoreboard players set game_start uhc.interface 1
+
 time set 0
 
 execute as @a[tag=uhc.player] run function uhc:reset_attributes
@@ -37,6 +40,9 @@ execute if score stats_scoreboard uhc.config matches 1 run scoreboard objectives
 # Remove lobby and display entities
 execute positioned 0 255 0 run fill ~-25 250 ~-25 ~24 253 ~24 air
 kill @e[tag=uhc.display]
+
+# Run functions in #game_start
+function #uhc:game_start
 
 # Schedule timings
 schedule function uhc:timer/second 1t
