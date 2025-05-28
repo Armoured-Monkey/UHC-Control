@@ -5,7 +5,7 @@
 scoreboard players add minutes uhc.timer 1
 scoreboard players add Timer uhc.stats 1
 scoreboard players add marker uhc.timer 1
-scoreboard players add border_status uhc.timer 1
+execute if score shrink uhc.border <= minutes uhc.timer run scoreboard players add border_status uhc.timer 1
 
 # Gentleman's Rule
 execute if score GRule uhc.config = minutes uhc.timer run schedule function uhc:timer/gr_over 5s

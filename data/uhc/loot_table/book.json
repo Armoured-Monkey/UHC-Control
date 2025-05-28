@@ -117,7 +117,17 @@
 										"\n",
 										{
 											"text": "     Team Selector",
-											"color": "#7f3202"
+											"color": "#7f3202",
+											"hoverEvent": {
+												"action": "show_text",
+												"contents": [
+													"Click here to removes players from all teams. Leaves people in the Spectator team alone."
+												]
+											},
+											"clickEvent": {
+												"action": "run_command",
+												"value": "/function uhc:teams/remove_all_teams"
+											}
 										},
 										"\n",
 										{
@@ -394,17 +404,34 @@
 										},
 										"\n\n",
 										{
-											"text": "Remove All Teams",
+											"text": "      Spectators",
 											"color": "#7f3202",
 											"hoverEvent": {
 												"action": "show_text",
 												"contents": [
-													"Removes players from all teams. Leaves people in the Spectator team alone."
+													"Toggle if players are able Spectate the game without the team picker being enabled. This adds options in the in-world lobby. It is disabled by default."
 												]
-											},
+											}
+										},
+										"\n",
+										{
+											"text": "Enable",
+											"color": "#d9b35c",
 											"clickEvent": {
 												"action": "run_command",
-												"value": "/function uhc:teams/remove_all_teams"
+												"value": "/function uhc:lobby/spectating/add_options"
+											}
+										},
+										{
+											"text": "/",
+											"color": "black"
+										},
+										{
+											"text": "Disable",
+											"color": "#d9b35c",
+											"clickEvent": {
+												"action": "run_command",
+												"value": "/function uhc:lobby/spectating/remove_options"
 											}
 										}
 									]
@@ -485,7 +512,7 @@
 										},
 										"\n",
 										{
-											"text": "Friendly Fire:",
+											"text": "Hurt Own Team:",
 											"color": "black",
 											"hoverEvent": {
 												"action": "show_text",
@@ -932,7 +959,12 @@
 											"color": "#e25903",
 											"hoverEvent": {
 												"action": "show_text",
-												"value": "Configure the world border. Hover over the different settings for more information."
+												"value": "Configure the world border. Hover over the different settings for more information. \n\nClick the title to pregenerate the overworld."
+											},
+											"clickEvent": {
+												"action": "run_command",
+												"value": "/function uhc:border/pregeneration/pregen"
+
 											}
 										},
 										"\n\n",

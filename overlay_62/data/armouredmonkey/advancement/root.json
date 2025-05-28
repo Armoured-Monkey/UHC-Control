@@ -1,0 +1,30 @@
+{
+    "display": {
+        "title": "Datapacks by ArmouredMonkey",
+        "description": ["",
+            {
+                "text": "Find my packs at ",
+                "color": "#e25903"
+            },
+            {
+                "text": "https://linktr.ee/armouredmonkey",
+                "color": "#d9b35c"
+            }],
+        "icon": {
+            "id": "minecraft:player_head",
+            "components": {
+                "minecraft:profile": {
+                    "name": "ArmouredMonkey"
+                }
+            }
+        },
+        "background": "minecraft:block/orange_terracotta",
+        "show_toast": false,
+        "announce_to_chat": false
+    },
+    "criteria": {
+        "trigger": {
+            "trigger": "minecraft:tick"
+        }
+    }
+}

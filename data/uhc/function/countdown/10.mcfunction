@@ -2,10 +2,10 @@ schedule function uhc:countdown/5 5s
 schedule clear uhc:lobby_second
 
 # Spread players
-execute if score start uhc.border matches 4096 run spreadplayers 0 0 450 2000 true @a[tag=uhc.player]
-execute if score start uhc.border matches 2048 run spreadplayers 0 0 200 1000 true @a[tag=uhc.player]
-execute if score start uhc.border matches 1024 run spreadplayers 0 0 100 500 true @a[tag=uhc.player]
-execute if score start uhc.border matches 512 run spreadplayers 0 0 50 250 true @a[tag=uhc.player]
+execute if score start uhc.border matches 4096 run spreadplayers 0 0 800 2000 true @a[tag=uhc.player]
+execute if score start uhc.border matches 2048 run spreadplayers 0 0 400 1000 true @a[tag=uhc.player]
+execute if score start uhc.border matches 1024 run spreadplayers 0 0 200 500 true @a[tag=uhc.player]
+execute if score start uhc.border matches 512 run spreadplayers 0 0 100 250 true @a[tag=uhc.player]
 
 clear @a
 kill @e[type=minecraft:item]
