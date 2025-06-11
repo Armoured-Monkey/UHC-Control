@@ -93,7 +93,7 @@ setworldspawn 0 253 0
 tp @a 0 260 0
 execute positioned 0 255 0 run fill ~-25 250 ~-25 ~24 253 ~24 barrier hollow
 execute positioned 0 255 0 run fill ~-24 253 ~-24 ~23 253 ~23 air
-schedule function uhc:lobby/second 1t
+schedule function #uhc:lobby_second 1t
 gamemode survival @a
 function uhc:display_entities/summon_display_entities
 
