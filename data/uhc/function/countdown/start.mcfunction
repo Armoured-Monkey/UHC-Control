@@ -42,5 +42,5 @@ execute positioned 0 255 0 run fill ~-25 250 ~-25 ~24 253 ~24 air
 kill @e[tag=uhc.display]
 
 # Schedule timings
-schedule function uhc:timer/second 1t
-schedule function uhc:timer/minute 1t
+schedule function #uhc:game_second 1t
+schedule function #uhc:game_minute 1t
