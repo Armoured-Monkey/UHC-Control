@@ -1,5 +1,5 @@
 schedule function uhc:countdown/5 5s
-schedule clear uhc:lobby/second
+schedule clear #uhc:lobby_second
 
 
 # Spread players

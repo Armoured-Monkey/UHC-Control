@@ -1,5 +1,5 @@
 schedule function uhc:countdown/5 5s
-schedule clear uhc:lobby/second
+schedule clear #uhc:lobby_second
 
 # Spread players
 execute if score start uhc.border matches 4096 run spreadplayers 0 0 800 2000 true @a[tag=uhc.player]
