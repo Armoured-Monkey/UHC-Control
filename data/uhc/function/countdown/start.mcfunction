@@ -27,6 +27,7 @@ execute as @a[tag=uhc.player] run function uhc:reset_attributes
 effect give @a[tag=uhc.player] minecraft:regeneration 5 100 true 
 effect give @a[tag=uhc.player] minecraft:saturation 3 1 true 
 title @a title {"text":"GO!","color":"#00B000"}
+tellraw @a ["",{"text":"Gentleman's Rule: No PvP for ", "color":"#d9b35c"},{"score":{"name":"GRule","objective": "uhc.config"}, "color": "#e25903", "bold": true},{"text":" minutes have elapsed.", "color":"#d9b35c"}]
 execute at @a run playsound minecraft:block.note_block.pling master @a ~ ~ ~ 1 1
 
 execute store result score AlivePlayers uhc.stats if entity @a[tag=uhc.player]
