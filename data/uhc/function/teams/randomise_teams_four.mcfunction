@@ -1,3 +1,4 @@
+function uhc:lobby/spectating/remove_options
 playsound minecraft:ui.button.click master @p ~ ~ ~
 team join uhc.1 @r[team=uhc.0,limit=4] 
 team join uhc.2 @r[team=uhc.0,limit=4] 
