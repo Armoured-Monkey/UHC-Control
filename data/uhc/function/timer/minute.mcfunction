@@ -64,4 +64,4 @@ execute store result score Spectators uhc.stats if entity @a[tag=uhc.spectator]
 effect give @a[team=uhc.spec] night_vision infinite 1 true
 
 # Schedule
-schedule function uhc:timer/minute 60s
+schedule function #uhc:game_minute 60s

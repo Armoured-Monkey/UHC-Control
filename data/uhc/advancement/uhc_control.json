@@ -13,7 +13,7 @@
                 "color": "#e25903"
             },
             {
-                "text": "/function uhc:admin/setup",
+                "text": "/function #uhc:admin_setup",
                 "color": "#7f3202"
             },
             {

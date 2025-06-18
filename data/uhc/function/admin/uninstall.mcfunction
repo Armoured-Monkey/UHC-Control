@@ -36,6 +36,7 @@ scoreboard objectives remove uhc.timer
 scoreboard objectives remove uhc.interface
 scoreboard objectives remove uhc.config
 scoreboard objectives remove uhc.stats
+scoreboard objectives remove uhc.pregen
 
 # Reset attributes for online players
 execute as @a run function uhc:reset_attributes
