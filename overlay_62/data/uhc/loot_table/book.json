@@ -960,8 +960,13 @@
                       "color": "#e25903",
                       "hover_event": {
                         "action": "show_text",
-                        "value": "Configure the world border. Hover over the different settings for more information."
-                      }
+                        "value": "Configure the world border. Hover over the different settings for more information.\n\nClick the title to pregenerate the overworld."
+                      },
+											"click_event": {
+												"action": "run_command",
+												"command": "/function uhc:border/pregeneration/pregen"
+
+											}
                     },
                     "\n\n",
                     {
