@@ -5,15 +5,6 @@ gamerule randomTickSpeed 3
 gamerule doDaylightCycle true
 gamerule fallDamage true
 
-# Set everyone in team 0 to spectator team
-team join uhc.spec @a[team=uhc.0]
-
-tag @a[team=!uhc.spec] add uhc.player
-tag @a[team=uhc.spec] add uhc.spectator
-
-# Team 11 = Spectator
-gamemode spectator @a[team=uhc.spec]
-
 # Scoreboard settings
 scoreboard players set minutes uhc.timer -1
 scoreboard players set Timer uhc.stats -1

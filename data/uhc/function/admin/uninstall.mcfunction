@@ -32,6 +32,7 @@ scoreboard objectives remove uhc.kills
 scoreboard objectives remove uhc.border
 scoreboard objectives remove uhc.lobby
 scoreboard objectives remove uhc.team
+scoreboard objectives remove uhc.teamCopy
 scoreboard objectives remove uhc.timer 
 scoreboard objectives remove uhc.interface
 scoreboard objectives remove uhc.config

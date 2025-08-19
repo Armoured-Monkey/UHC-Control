@@ -42,6 +42,7 @@ scoreboard objectives modify uhc.health rendertype hearts
 scoreboard objectives add uhc.deaths deathCount
 # Background scoreboards
 scoreboard objectives add uhc.team trigger "Join Team Number"
+scoreboard objectives add uhc.teamCopy dummy
 scoreboard objectives add uhc.border dummy "UHC Border Configuration"
 scoreboard objectives add uhc.timer dummy "UHC Timer"
 scoreboard objectives add uhc.interface dummy "UHC Module Interface"
