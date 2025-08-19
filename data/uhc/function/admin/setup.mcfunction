@@ -42,6 +42,7 @@ scoreboard objectives modify uhc.health rendertype hearts
 scoreboard objectives add uhc.deaths deathCount
 # Background scoreboards
 scoreboard objectives add uhc.team trigger "Join Team Number"
+scoreboard objectives add uhc.teamCopy dummy
 scoreboard objectives add uhc.border dummy "UHC Border Configuration"
 scoreboard objectives add uhc.timer dummy "UHC Timer"
 scoreboard objectives add uhc.interface dummy "UHC Module Interface"
@@ -111,6 +112,8 @@ weather clear
 
 # Set default world border options and orient world border around 0,0
 worldborder center 0 0
+worldborder damage buffer 20
+worldborder warning distance 20
 
 # Announce
 tellraw @s {"text":"                                                                                ","color":"#7f3202","strikethrough":true}
