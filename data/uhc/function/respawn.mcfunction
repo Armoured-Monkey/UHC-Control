@@ -36,6 +36,8 @@ tp @s[team=uhc.11] @r[team=uhc.11]
 tp @s[team=uhc.12] @r[team=uhc.12]
 # Set gamemode to survival
 gamemode survival @s
+# Clear effects
+effect clear @s
 # Update stats scoreboard
 execute store result score AlivePlayers uhc.stats if entity @a[tag=uhc.player]
 execute store result score Spectators uhc.stats if entity @a[tag=uhc.spectator]
