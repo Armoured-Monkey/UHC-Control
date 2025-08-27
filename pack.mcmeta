@@ -21,6 +21,11 @@
 			{
 				"formats": {"min_inclusive":80, "max_inclusive": 999},
 				"directory": "overlay_80"
+			},
+			{
+				"directory": "overlay_85_0",
+				"min_format": 85,
+				"max_format": 999
 			}
 		]
 	}
