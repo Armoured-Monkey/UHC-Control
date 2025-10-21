@@ -101,7 +101,9 @@ function uhc:display_entities/summon_display_entities
 # World settings for whilst in lobby. These are reset upon game start.
 gamerule commandBlockOutput false
 gamerule spectatorsGenerateChunks true
+execute in minecraft:the_nether run gamerule spectatorsGenerateChunks true
 gamerule locatorBar false
+execute in minecraft:the_nether run gamerule locatorBar false
 gamerule randomTickSpeed 0
 gamerule doDaylightCycle false
 gamerule spawnRadius 0
