@@ -108,6 +108,8 @@ gamerule randomTickSpeed 0
 gamerule doDaylightCycle false
 gamerule spawnRadius 0
 gamerule fallDamage false
+gamerule pvp false
+execute in minecraft:the_nether run gamerule pvp false
 time set noon
 difficulty peaceful
 gamerule doWeatherCycle false
