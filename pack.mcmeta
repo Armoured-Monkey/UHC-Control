@@ -1,49 +1,8 @@
 {
 	"pack": {
-		"pack_format": 48,
+		"pack_format": 94,
 		"description": "UHC Control by ArmouredMonkey",
-		"supported_formats": {"min_inclusive":48, "max_inclusive": 999},
-		"min_format": 48,
+		"min_format": 94,
 		"max_format": 999
-	},
-	"overlays": {
-		"entries": [
-			{
-				"formats": {"min_inclusive":49, "max_inclusive": 999},
-				"min_format": 49,
-				"max_format": 999,
-				"directory": "overlay_49"
-			},
-			{
-				"formats": {"min_inclusive":58, "max_inclusive": 999},
-				"min_format": 58,
-				"max_format": 999,
-				"directory": "overlay_58"
-			},
-			{
-				"formats": {"min_inclusive":62, "max_inclusive": 999},
-				"min_format": 62,
-				"max_format": 999,
-				"directory": "overlay_62"
-			},
-			{
-				"formats": {"min_inclusive":80, "max_inclusive": 999},
-				"min_format": 80,
-				"max_format": 999,
-				"directory": "overlay_80"
-			},
-			{
-				"formats": {"min_inclusive":85, "max_inclusive": 999},
-				"directory": "overlay_88_0",
-				"min_format": 85,
-				"max_format": 999
-			},
-			{
-				"formats": {"min_inclusive":94, "max_inclusive": 999},
-				"directory": "overlay_94_1",
-				"min_format": 94,
-				"max_format": 999
-			}
-		]
 	}
 }
