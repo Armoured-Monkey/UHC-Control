@@ -1,6 +1,6 @@
 scoreboard objectives add uhc.pregen dummy
 
-gamerule spectatorsGenerateChunks true
+gamerule minecraft:spectators_generate_chunks true
 worldborder damage amount 0
 
 execute store result score pregenmax uhc.pregen run worldborder get

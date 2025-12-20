@@ -1,7 +1,7 @@
 # Clear Scoreboards
 scoreboard objectives remove uhc.pregen
 
-gamerule spectatorsGenerateChunks false
+gamerule minecraft:spectators_generate_chunks false
 
 # Put player back in the lobby
 teleport @a[tag=pregen] ~ 300 ~

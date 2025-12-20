@@ -1,6 +1,7 @@
 schedule function uhc:countdown/5 5s
 schedule clear #uhc:lobby_second
 
+
 # Spread players
 execute if score start uhc.border matches 4096 run spreadplayers 0 0 1000 2030 true @a[tag=uhc.player]
 execute if score start uhc.border matches 2048 run spreadplayers 0 0 450 1015 true @a[tag=uhc.player]
@@ -17,12 +18,12 @@ tag @a[team=!uhc.spec] add uhc.player
 tag @a[team=uhc.spec] add uhc.spectator
 gamemode spectator @a[team=uhc.spec]
 
+# Remove movement
+execute as @a[tag=uhc.player] run attribute @s minecraft:movement_speed base set 0
+execute as @a[tag=uhc.player] run attribute @s minecraft:jump_strength base set 0
+
 # Ensures all players in Survival
 gamemode survival @a[team=!uhc.spec]
-
-# Remove movement
-execute as @a[tag=uhc.player] run attribute @s minecraft:generic.movement_speed base set 0
-execute as @a[tag=uhc.player] run attribute @s minecraft:generic.jump_strength base set 0
 
 advancement revoke @a everything
 scoreboard objectives setdisplay sidebar

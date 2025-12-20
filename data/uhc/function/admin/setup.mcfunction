@@ -99,16 +99,20 @@ gamemode survival @a
 function uhc:display_entities/summon_display_entities
 
 # World settings for whilst in lobby. These are reset upon game start.
-gamerule commandBlockOutput false
-gamerule spectatorsGenerateChunks true
-execute in minecraft:the_nether run gamerule spectatorsGenerateChunks true
-gamerule randomTickSpeed 0
-gamerule doDaylightCycle false
-gamerule spawnRadius 0
-gamerule fallDamage false
+gamerule minecraft:command_block_output false
+gamerule minecraft:spectators_generate_chunks true
+execute in minecraft:the_nether run gamerule minecraft:spectators_generate_chunks true
+gamerule minecraft:locator_bar false
+execute in minecraft:the_nether run gamerule minecraft:locator_bar false
+gamerule minecraft:random_tick_speed 0
+gamerule minecraft:advance_time false
+gamerule minecraft:respawn_radius 0
+gamerule minecraft:fall_damage false
+gamerule minecraft:pvp false
+execute in minecraft:the_nether run gamerule minecraft:pvp false
 time set noon
 difficulty peaceful
-gamerule doWeatherCycle false
+gamerule minecraft:advance_weather false
 weather clear
 
 # Set default world border options and orient world border around 0,0

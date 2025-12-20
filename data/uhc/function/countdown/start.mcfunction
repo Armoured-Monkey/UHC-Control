@@ -1,9 +1,9 @@
 # Start Procedure
 
 # Revert gamerules set for pre-game lobby
-gamerule randomTickSpeed 3
-gamerule doDaylightCycle true
-gamerule fallDamage true
+gamerule minecraft:random_tick_speed 3
+gamerule minecraft:advance_time true
+gamerule minecraft:fall_damage true
 
 # Scoreboard settings
 scoreboard players set minutes uhc.timer -1
