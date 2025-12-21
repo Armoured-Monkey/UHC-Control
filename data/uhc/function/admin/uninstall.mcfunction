@@ -1,9 +1,9 @@
 # Unistall and remove physical traces of the data pack.
 
 # Remove Scheduled Functions
-schedule clear uhc:timer/second
-schedule clear uhc:lobby/second
-schedule clear uhc:timer/minute
+schedule clear #uhc:game/second
+schedule clear #uhc:lobby/second
+schedule clear #uhc:game/minute
 
 # Set lobby to air
 execute positioned 0 255 0 run fill ~-25 250 ~-25 ~24 253 ~24 air

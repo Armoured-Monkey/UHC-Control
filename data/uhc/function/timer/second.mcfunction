@@ -7,4 +7,4 @@ execute as @a[tag=!uhc.player,tag=!uhc.spectator] run function uhc:new_player_jo
 # Checks all players to ensure that their modified attributes are not left over from the lobby
 execute as @a[tag=!uhc.attributes_reset,tag=!uhc.spectator] run function uhc:reset_attributes
 
-schedule function #uhc:game_second 1s
+schedule function #uhc:game/second 1s
