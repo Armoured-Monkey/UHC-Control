@@ -1,6 +1,6 @@
 {
     "replace": false,
     "values": [
-        "uhc:countdown/start"
+        "uhc:game/countdown/begin"
     ]
 }

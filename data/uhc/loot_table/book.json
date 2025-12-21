@@ -85,7 +85,7 @@
                       "color": "dark_green",
                       "click_event": {
                         "action": "run_command",
-                        "command": "/schedule function uhc:countdown/10 1s"
+                        "command": "/schedule function uhc:game/countdown/10 1s"
                       },
                       "hover_event": {
                         "action": "show_text",
