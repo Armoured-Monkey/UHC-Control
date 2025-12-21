@@ -1,5 +1,5 @@
 # Run death sequence if someone has died
-execute as @a[scores={uhc.deaths=1}] run function uhc:death
+execute as @a[scores={uhc.deaths=1}] run function #uhc:game/death
 
 # Run new player joined sequence if someone has joined
 execute as @a[tag=!uhc.player,tag=!uhc.spectator] run function uhc:new_player_joined
