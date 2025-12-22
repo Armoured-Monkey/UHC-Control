@@ -1,7 +1,5 @@
-# Respawn a player when they have died.
-# Run by an admin using /execute as <player> run function:uhc/respawn
-# Target is @s - being the player getting respawned.
-# Can only reliably respawn a player if they still have a teammate alive.
+# Description: Respawn a player when they have died. Can only reliably respawn a player if they still have a teammate alive.
+# Called by: Admin using /execute as <player> run function:uhc/respawn
 
 # Copy team number from copy to functional scoreboard
 scoreboard players operation @s uhc.team = @s uhc.teamCopy

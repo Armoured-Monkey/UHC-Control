@@ -1,4 +1,3 @@
-# File: game/death.mcfunction
 # Description: Processes a player when they die.
 # Called by: game\timer\second.mcfunction
 

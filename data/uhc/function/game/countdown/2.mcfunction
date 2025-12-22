@@ -1,4 +1,3 @@
-# File: game/countdown/2.mcfunction
 # Description: 2 second countdown before game start.
 # Called by: game\countdown\3.mcfunction
 

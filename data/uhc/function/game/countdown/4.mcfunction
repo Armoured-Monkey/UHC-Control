@@ -1,4 +1,3 @@
-# File: game/countdown/4.mcfunction
 # Description: 4 second countdown before game start.
 # Called by: game\countdown\5.mcfunction
 

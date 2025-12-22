@@ -1,4 +1,3 @@
-# File: game/countdown/10.mcfunction
 # Description: Beginning of the game countdown. Prepares players to start the game.
 # Called by: Control book by admin. (Start button)
 

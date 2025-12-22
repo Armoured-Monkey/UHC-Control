@@ -1,4 +1,3 @@
-# File: game/countdown/begin.mcfunction
 # Description: The game has begun!
 # Called by: game\countdown\1.mcfunction
 
