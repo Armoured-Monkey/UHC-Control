@@ -1,6 +1,5 @@
-# Setup command
-# Called by: user
-# 
+# Description: Sets up the UHC game. Creates lobby, teams, scoreboards, and world settings.
+# Called by: Admin through function tag.
 
 # Scoreboards
 # Lobby Scoreboard Information Display.
@@ -80,7 +79,7 @@ team add uhc.11
 team modify uhc.11 color dark_aqua
 team add uhc.12
 team modify uhc.12 color dark_blue
-# -1 spectators - black
+# -1 spectators - gray
 team add uhc.spec
 team modify uhc.spec color gray
 

@@ -1,4 +1,5 @@
-# Unistall and remove physical traces of the data pack.
+# Description: Unistall and remove physical traces of the data pack.
+# Called by: Admin through function tag.
 
 # Remove Scheduled Functions
 schedule clear #uhc:game/second
