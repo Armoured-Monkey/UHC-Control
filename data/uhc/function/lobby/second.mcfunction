@@ -1,8 +1,8 @@
 # Called by admin/setup.mcfunction
 # Ticking in lobby
 
-tp @a[team=] 0 253 0
-team join uhc.0 @a[team=]
+execute as @a[tag=!uhc.joined] run function #uhc:lobby/player_join
+
 loot replace entity @a hotbar.0 loot uhc:book
 execute store result score PlayerCount uhc.lobby if entity @a[tag=uhc.player]
 execute store result score AdminCount uhc.lobby if entity @a[gamemode=creative]
