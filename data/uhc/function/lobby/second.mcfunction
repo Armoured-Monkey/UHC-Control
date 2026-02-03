@@ -40,7 +40,7 @@ scoreboard players set @a[team=uhc.0] uhc.team 0
 tag @a[team=uhc.spec] add uhc.spectator
 tag @a[team=uhc.spec] remove uhc.player
 tag @a[team=uhc.0] remove uhc.player
-tag @a[team=!uhc.spec] add uhc.player
+tag @a[team=!uhc.spec, team=!uhc.0] add uhc.player
 tag @a[team=!uhc.spec] remove uhc.spectator
 
 execute unless score marker uhc.config = marker_compare uhc.config run function uhc:display_entities/update_marker
