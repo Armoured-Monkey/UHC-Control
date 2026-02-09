@@ -1,9 +1,17 @@
 # Configuration
-All options in the UHC Control Book have hover text explaining what they are.
+All options in the UHC Control Book have hover text explaining what they are. Default settings can be restored by running `/function uhc:settings/default_settings`. 
 
 ## Teams
 
 ## Timings
+
+### Eternal Time
+
+### Gentleman's Rule
+
+### Minute Markers
+
+### Border Updates
 
 ## Game Rules
 **Fire Spread**
@@ -37,5 +45,13 @@ All options in the UHC Control Book have hover text explaining what they are.
 (Default: True): When true, wardens can spawn.
 
 ## World Border
+
+**Starting Size**
+
+**Final Size**
+
+**Shrinking Start Time**
+
+**Shrink Duration**
 
 ## Scoreboards

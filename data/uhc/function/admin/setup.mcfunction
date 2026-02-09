@@ -85,7 +85,7 @@ team modify uhc.spec color gray
 
 scoreboard players set marker uhc.timer 0
 
-function uhc:options/default_settings
+function uhc:settings/default_settings
 
 # Generate the lobby and centre world on 0,0 
 gamemode spectator @a
