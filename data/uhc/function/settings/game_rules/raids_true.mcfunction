@@ -1,5 +1,5 @@
 # Raids True/Yes
-playsound minecraft:ui.button.click master @p ~ ~ ~
+playsound minecraft:ui.button.click master @p[tag=!uhc.mute_sounds] ~ ~ ~
 gamerule minecraft:raids true
 execute in minecraft:the_nether run gamerule minecraft:raids true
 data modify storage uhc_control raids set value "True"
