@@ -1,5 +1,5 @@
 # Patrol Spawning True/Yes
-playsound minecraft:ui.button.click master @p ~ ~ ~
+playsound minecraft:ui.button.click master @p[tag=!uhc.mute_sounds] ~ ~ ~
 gamerule minecraft:spawn_patrols true
 execute in minecraft:the_nether run gamerule minecraft:spawn_patrols true
 data modify storage uhc_control patrol_spawning set value "True"

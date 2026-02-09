@@ -1,5 +1,5 @@
 # Announce Advancements True/Yes
-playsound minecraft:ui.button.click master @p ~ ~ ~
+playsound minecraft:ui.button.click master @p[tag=!uhc.mute_sounds] ~ ~ ~
 gamerule minecraft:show_advancement_messages true
 execute in minecraft:the_nether run gamerule minecraft:show_advancement_messages true
 data modify storage uhc_control announce_advancements set value "True"
