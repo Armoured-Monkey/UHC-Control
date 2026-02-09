@@ -6,21 +6,35 @@ All options in the UHC Control Book have hover text explaining what they are.
 ## Timings
 
 ## Game Rules
-Fire Spread
+**Fire Spread**
+(Default: True)
 
-Hurt Own Team
 
-Natural Health Regeneration
+**Hurt Own Team**
 
-Raids
 
-Show Advancement Messages
+**Locator Bar**
 
-Spawn Patrols
 
-Spawn Phantoms
+**Natural Health Regeneration**
 
-Spawn Wandering Traders
+
+**Raids**
+
+
+**Show Advancement Messages**
+
+
+**Spawn Patrols**
+
+
+**Spawn Phantoms**
+
+
+**Spawn Wandering Traders**
+
+
+**Spawn Wardens**
 
 
 ## World Border
