@@ -5,6 +5,6 @@ execute as @a[scores={uhc.deaths=1}] run function #uhc:game/death
 execute as @a[tag=!uhc.joined] run function #uhc:game/player_join
 
 # Checks all players to ensure that their modified attributes are not left over from the lobby
-execute as @a[tag=!uhc.attributes_reset,tag=!uhc.spectator] run function uhc:reset_attributes
+execute as @a[tag=!uhc.attributes_reset,tag=!uhc.spectator] run function uhc:game/reset_attributes
 
 schedule function #uhc:game/second 1s

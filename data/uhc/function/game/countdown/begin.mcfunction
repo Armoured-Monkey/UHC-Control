@@ -15,7 +15,7 @@ schedule function #uhc:game/second 1t
 schedule function #uhc:game/minute 1t
 
 # Tidy up players
-execute as @a[tag=uhc.player] run function uhc:reset_attributes
+execute as @a[tag=uhc.player] run function uhc:game/reset_attributes
 effect give @a[tag=uhc.player] minecraft:regeneration 5 100 true 
 effect give @a[tag=uhc.player] minecraft:saturation 3 1 true 
 effect give @a[team=uhc.spec] night_vision infinite 1 true
@@ -27,7 +27,7 @@ difficulty hard
 # Messages and sounds
 title @a title {"text":"GO!","color":"#00B000"}
 execute unless score GRule uhc.config matches 0 run tellraw @a ["",{"text":"Gentleman's Rule: No PvP until ", "color":"#d9b35c"},{"score":{"name":"GRule","objective": "uhc.config"}, "color": "#e25903", "bold": true},{"text":" minutes have elapsed.", "color":"#d9b35c"}]
-execute at @a run playsound minecraft:block.note_block.pling master @a ~ ~ ~ 1 1
+execute at @a run playsound minecraft:block.note_block.pling master @a[tag=!uhc.mute_sounds] ~ ~ ~ 1 1
 
 # Scoreboards
 execute store result score AlivePlayers uhc.stats if entity @a[tag=uhc.player]
