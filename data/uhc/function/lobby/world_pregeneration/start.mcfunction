@@ -22,4 +22,4 @@ teleport @a[tag=uhc.pregen] ~ 300 ~
 
 title @a actionbar ["",{"text":"Pregeneration Starting","color":"#E25903"}]
 
-function uhc:border/pregeneration/loop
+function uhc:lobby/world_pregeneration/loop

@@ -51,11 +51,15 @@ Default: 10 Minutes
 ## World Border
 
 **Starting Size**
+Default: 2048 Blocks
 
 **Final Size**
+Default: 32 Blocks
 
 **Shrinking Start Time**
+Default: 60 Minutes
 
 **Shrink Duration**
+Default: 60 Minutes
 
 ## Scoreboards

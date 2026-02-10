@@ -47,6 +47,8 @@ execute as @a run function uhc:reset_attributes
 tag @a remove uhc.player
 tag @a remove uhc.spectator
 tag @a remove uhc.attributes_reset
+tag @a remove uhc.mute_sounds
+tag @a remove uhc.joined
 
 # Delete Storage
 data remove storage minecraft:uhc_control announce_advancements
@@ -57,6 +59,8 @@ data remove storage minecraft:uhc_control phantoms_spawn
 data remove storage minecraft:uhc_control raids
 data remove storage minecraft:uhc_control regeneration
 data remove storage minecraft:uhc_control traders_spawn
+data remove storage minecraft:uhc_control locator_bar
+data remove storage minecraft:uhc_control spawn_wardens
 data remove storage minecraft:uhc_control eternal
 data remove storage minecraft:uhc_control expansions
 

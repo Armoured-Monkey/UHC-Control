@@ -15,9 +15,9 @@ execute if score picker uhc.config matches 1 run scoreboard players enable @a uh
 # Team Picker enabled for UHC Admins regardless of setting
 scoreboard players enable @a[gamemode=creative] uhc.team
 
-effect give @a minecraft:saturation 1 100 true
-effect give @a minecraft:resistance 1 100 true
-effect give @a minecraft:weakness 1 100 true
+effect give @a minecraft:saturation 2 100 true
+effect give @a minecraft:resistance 2 100 true
+effect give @a minecraft:weakness 2 100 true
 
 # Join players to teams based on scoreboard number that is created via team selector in book.
 team join uhc.spec @a[scores={uhc.team=-1}]

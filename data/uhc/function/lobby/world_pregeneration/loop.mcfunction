@@ -1,4 +1,4 @@
-execute if score pregenmove uhc.pregen = pregenset uhc.pregen run function uhc:border/pregeneration/set
+execute if score pregenmove uhc.pregen = pregenset uhc.pregen run function uhc:lobby/world_pregeneration/set
 
 execute as @a[tag=uhc.pregen] at @s if score pregendirection uhc.pregen matches 1 run teleport @s ~ ~ ~-200 0 90
 execute as @a[tag=uhc.pregen] at @s if score pregendirection uhc.pregen matches 2 run teleport @s ~200 ~ ~ 0 90

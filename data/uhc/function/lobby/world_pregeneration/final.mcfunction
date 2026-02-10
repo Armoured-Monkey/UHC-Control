@@ -3,5 +3,5 @@ execute if score pregenmodulus uhc.pregen matches 0 as @a[tag=uhc.pregen] at @s 
 
 scoreboard players add pregenmove uhc.pregen 1
 
-execute unless score pregenmax uhc.pregen = pregenmove uhc.pregen run schedule function uhc:border/pregeneration/final 5s
-execute if score pregenmax uhc.pregen = pregenmove uhc.pregen run function uhc:border/pregeneration/end
+execute unless score pregenmax uhc.pregen = pregenmove uhc.pregen run schedule function uhc:lobby/world_pregeneration/final 5s
+execute if score pregenmax uhc.pregen = pregenmove uhc.pregen run function uhc:lobby/world_pregeneration/end

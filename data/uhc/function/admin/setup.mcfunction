@@ -101,8 +101,6 @@ function uhc:lobby/display_entities/summon
 gamerule minecraft:command_block_output false
 gamerule minecraft:spectators_generate_chunks true
 execute in minecraft:the_nether run gamerule minecraft:spectators_generate_chunks true
-gamerule minecraft:locator_bar false
-execute in minecraft:the_nether run gamerule minecraft:locator_bar false
 gamerule minecraft:random_tick_speed 0
 gamerule minecraft:advance_time false
 gamerule minecraft:respawn_radius 0

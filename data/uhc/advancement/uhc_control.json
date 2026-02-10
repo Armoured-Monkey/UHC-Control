@@ -4,7 +4,7 @@
         "description": [
             "",
             {
-                "text": "This data pack allows the configuration of an UHC event.",
+                "text": "This data pack allows the configuration of a UHC event.",
                 "color": "#e25903"
             },
             "\n\n",
@@ -34,7 +34,7 @@
                 "color": "#e25903"
             }, 
             {
-                "text": "/function uhc:admin/uninstall",
+                "text": "/function #uhc:admin/uninstall",
                 "color": "#7f3202"
             },
             {

@@ -14,10 +14,10 @@ function uhc:settings/game_rules/spawn_wandering_traders_true
 function uhc:settings/game_rules/spawn_wardens_true
 
 ## World Border
-function uhc:border/duration/60
-function uhc:border/end/256
-function uhc:border/start/4096
-function uhc:border/shrink/60
+function uhc:settings/world_border/shrink_duration/60
+function uhc:settings/world_border/shrink_begins/60
+function uhc:settings/world_border/final_size/32
+function uhc:settings/world_border/starting_size/2048
 
 ## Timings
 function uhc:settings/markers/minute/20

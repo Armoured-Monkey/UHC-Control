@@ -8,7 +8,7 @@ scoreboard players add marker uhc.timer 1
 execute if score shrink uhc.border <= minutes uhc.timer run scoreboard players add border_status uhc.timer 1
 
 # Gentleman's Rule
-execute if score GRule uhc.config = minutes uhc.timer run schedule function uhc:game/timer/gentlemans_rule_ends 5s
+execute if score GRule uhc.config = minutes uhc.timer run schedule function uhc:game/timer/gentlemans_rule_ends 3s
 
 # World Border
 execute store result score Current uhc.border run worldborder get
