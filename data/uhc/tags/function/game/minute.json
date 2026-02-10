@@ -1,6 +1,6 @@
 {
     "replace": false,
     "values": [
-        "uhc:timer/minute"
+        "uhc:game/timer/minute"
     ]
 }
