@@ -129,8 +129,8 @@ Then delete the datapack from the world’s datapacks folder.
 
 Once you are comfortable running a basic game, you may want to explore:
 
-- [Configuration & Options](./docs/configuration.md)
-- [Expansions](./docs/expansions.md)
-- [Creating Expansions](./docs/creating-expansions.md)
+- [Configuration & Options](configuration.md)
+- [Expansions](expansions.md)
+- [Creating Expansions](creating-expansions.md)
 
 If you are running an event and have questions, support is available via the [Discord server](https://discord.gg/92wPVejgYB).
