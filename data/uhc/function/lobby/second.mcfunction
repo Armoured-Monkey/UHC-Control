@@ -43,9 +43,9 @@ tag @a[team=uhc.0] remove uhc.player
 tag @a[team=!uhc.spec, team=!uhc.0] add uhc.player
 tag @a[team=!uhc.spec] remove uhc.spectator
 
-execute unless score marker uhc.config = marker_compare uhc.config run function uhc:display_entities/update_marker
-execute unless score GRule uhc.config = GRule_compare uhc.config run function uhc:display_entities/update_gr
-execute unless score border_status uhc.config = border_status_compare uhc.config run function uhc:display_entities/update_border
-execute unless score Eternal uhc.config = Eternal_compare uhc.config run function uhc:display_entities/update_eternal
+execute unless score marker uhc.config = marker_compare uhc.config run function uhc:lobby/display_entities/update_marker
+execute unless score GRule uhc.config = GRule_compare uhc.config run function uhc:lobby/display_entities/update_gr
+execute unless score border_status uhc.config = border_status_compare uhc.config run function uhc:lobby/display_entities/update_border
+execute unless score Eternal uhc.config = Eternal_compare uhc.config run function uhc:lobby/display_entities/update_eternal
 
 schedule function #uhc:lobby/second 1s

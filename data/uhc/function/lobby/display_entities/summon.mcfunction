@@ -14,4 +14,4 @@ summon text_display 0.5 256.0 24.0 {text:{"text":"World Border","color":"#e25903
 
 ## Loaded Expansions
 summon text_display -24.0 256.0 0.5 {text:{"text":"Expansions","color":"#e25903","bold":false},alignment:"center",background:0,transformation:[0,0,4,0,0,4,0,0,-4,0,0,0,0,0,0,1], billboard:"fixed", Tags:[uhc.display],UUID:[I;1092512712,2021344439,-1279314864,228132161]}
-schedule function uhc:display_entities/expansions_list 10t
+schedule function uhc:lobby/display_entities/expansions_list 10t
