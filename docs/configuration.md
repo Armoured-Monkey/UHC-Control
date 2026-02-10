@@ -6,12 +6,16 @@ All options in the UHC Control Book have hover text explaining what they are. De
 ## Timings
 
 ### Eternal Time
+Default: Eternal Day, 40 Minutes
 
 ### Gentleman's Rule
+Default: 20 Minutes
 
 ### Minute Markers
+Default: 20 Minutes
 
 ### Border Updates
+Default: 10 Minutes
 
 ## Game Rules
 **Fire Spread**
