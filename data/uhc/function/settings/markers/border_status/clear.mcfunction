@@ -1,4 +1,4 @@
-playsound minecraft:ui.button.click master @p ~ ~ ~
+playsound minecraft:ui.button.click master @p[tag=!uhc.mute_sounds] ~ ~ ~
 scoreboard players set border_status uhc.config -1
 scoreboard players set border_status_compare uhc.config -1
 kill @e[nbt={UUID:[I;439079384,-128103514,-1924170241,-440128255]}]
