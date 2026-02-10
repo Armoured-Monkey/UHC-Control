@@ -20,8 +20,8 @@ function uhc:border/start/4096
 function uhc:border/shrink/60
 
 ## Timings
-function uhc:options/marker/20
-function uhc:options/border_updates/10
-function uhc:options/gentlemensrule/20
-function uhc:options/eternaltime/40
-function uhc:options/eternaltime/day
+function uhc:settings/markers/minute/20
+function uhc:settings/markers/border_status/10
+function uhc:settings/gentleman_rule/20
+function uhc:settings/eternal_time/minutes/40
+function uhc:settings/eternal_time/day
