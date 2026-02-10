@@ -8,7 +8,7 @@ tag @s remove uhc.player
 tag @s add uhc.spectator
 
 # Run death sound for all players
-execute at @a run playsound minecraft:block.trial_spawner.spawn_mob master @a ~ ~ ~ 0.5 1
+execute at @a run playsound minecraft:block.trial_spawner.spawn_mob master @a[tag=!uhc.mute_sounds] ~ ~ ~ 0.5 1
 
 # Update scoreboards
 scoreboard players set @s uhc.deaths 0

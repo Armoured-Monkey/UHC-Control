@@ -1,4 +1,4 @@
-playsound minecraft:ui.button.click master @p ~ ~ ~
+playsound minecraft:ui.button.click master @p[tag=!uhc.mute_sounds] ~ ~ ~
 scoreboard players set Eternal uhc.config -1
 scoreboard players set Eternal_compare uhc.config -1
 kill @e[nbt={UUID:[I;1026762554,-465483100,-1624571661,-1191739035]}]

@@ -1,4 +1,4 @@
-playsound minecraft:ui.button.click master @p ~ ~ ~
+playsound minecraft:ui.button.click master @p[tag=!uhc.mute_sounds] ~ ~ ~
 scoreboard players set Night uhc.config 0
 data modify storage minecraft:uhc_control eternal set value "Day: "
 kill @e[nbt={UUID:[I;1026762554,-465483100,-1624571661,-1191739035]}]

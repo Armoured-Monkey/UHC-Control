@@ -2,7 +2,7 @@
 #
 # Removes all players from teams (except spectators)
 
-playsound minecraft:ui.button.click master @p ~ ~ ~
+playsound minecraft:ui.button.click master @p[tag=!uhc.mute_sounds] ~ ~ ~
 title @p actionbar {"text":"Emptied all Teams.", "color":"#E25903"}
 team join uhc.0 @a[team=!uhc.spec]
 scoreboard players set @a[team=!uhc.spec] uhc.team 0

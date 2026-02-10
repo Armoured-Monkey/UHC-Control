@@ -1,5 +1,5 @@
 function uhc:lobby/spectating/remove_options
-playsound minecraft:ui.button.click master @p ~ ~ ~
+playsound minecraft:ui.button.click master @p[tag=!uhc.mute_sounds] ~ ~ ~
 team join uhc.1 @r[team=uhc.0,limit=5] 
 team join uhc.2 @r[team=uhc.0,limit=5] 
 team join uhc.3 @r[team=uhc.0,limit=5] 

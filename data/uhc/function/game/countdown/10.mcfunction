@@ -34,7 +34,7 @@ scoreboard players operation @a uhc.teamCopy = @a uhc.team
 
 # Messages and sounds
 title @a title {"text":"10","color":"#e25903"} 
-execute at @a run playsound minecraft:block.note_block.pling master @a ~ ~ ~ 1 0.1
+execute at @a run playsound minecraft:block.note_block.pling master @a[tag=!uhc.mute_sounds] ~ ~ ~ 1 0.1
 
 # Clear the lobby and display entities
 schedule clear #uhc:lobby/second
