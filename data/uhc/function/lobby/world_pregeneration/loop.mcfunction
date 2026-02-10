@@ -9,5 +9,5 @@ scoreboard players add pregenmove uhc.pregen 1
 
 title @a actionbar ["",{"text":"Pregeneration in Progress...","color":"#E25903"}]
 
-execute unless score pregenset uhc.pregen > pregenmax uhc.pregen run schedule function uhc:border/pregeneration/loop 5s
-execute if score pregenset uhc.pregen > pregenmax uhc.pregen run function uhc:border/pregeneration/final
+execute unless score pregenset uhc.pregen > pregenmax uhc.pregen run schedule function uhc:lobby/world_pregeneration/loop 5s
+execute if score pregenset uhc.pregen > pregenmax uhc.pregen run function uhc:lobby/world_pregeneration/final
