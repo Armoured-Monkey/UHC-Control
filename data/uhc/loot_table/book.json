@@ -126,7 +126,7 @@
                       },
                       "click_event": {
                         "action": "run_command",
-                        "command": "/function uhc:teams/remove_all_teams"
+                        "command": "/function uhc:lobby/teams/remove_all_teams"
                       }
                     },
                     "\n",
@@ -344,7 +344,7 @@
                       "color": "#d9b35c",
                       "click_event": {
                         "action": "run_command",
-                        "command": "/function uhc:teams/randomise_teams_two"
+                        "command": "/function uhc:lobby/teams/randomise_teams_two"
                       }
                     },
                     {
@@ -352,7 +352,7 @@
                       "color": "#d9b35c",
                       "click_event": {
                         "action": "run_command",
-                        "command": "/function uhc:teams/randomise_teams_three"
+                        "command": "/function uhc:lobby/teams/randomise_teams_three"
                       }
                     },
                     {
@@ -360,7 +360,7 @@
                       "color": "#d9b35c",
                       "click_event": {
                         "action": "run_command",
-                        "command": "/function uhc:teams/randomise_teams_four"
+                        "command": "/function uhc:lobby/teams/randomise_teams_four"
                       }
                     },
                     {
@@ -368,7 +368,7 @@
                       "color": "#d9b35c",
                       "click_event": {
                         "action": "run_command",
-                        "command": "/function uhc:teams/randomise_teams_five"
+                        "command": "/function uhc:lobby/teams/randomise_teams_five"
                       }
                     },
                     "\n\n",
@@ -388,7 +388,7 @@
                       "color": "#d9b35c",
                       "click_event": {
                         "action": "run_command",
-                        "command": "/function uhc:teams/picker_enable"
+                        "command": "/function uhc:lobby/teams/picker_enable"
                       }
                     },
                     {
@@ -400,7 +400,7 @@
                       "color": "#d9b35c",
                       "click_event": {
                         "action": "run_command",
-                        "command": "/function uhc:teams/picker_disable"
+                        "command": "/function uhc:lobby/teams/picker_disable"
                       }
                     },
                     "\n\n",
@@ -467,7 +467,7 @@
                       "color": "green",
                       "click_event": {
                         "action": "run_command",
-                        "command": "/function uhc:options/game_rules/announce_advancements_true"
+                        "command": "/function uhc:settings/game_rules/show_advancement_messages_true"
                       }
                     },
                     {
@@ -479,7 +479,7 @@
                       "color": "red",
                       "click_event": {
                         "action": "run_command",
-                        "command": "/function uhc:options/game_rules/announce_advancements_false"
+                        "command": "/function uhc:settings/game_rules/show_advancement_messages_false"
                       }
                     },
                     "\n",
@@ -496,7 +496,7 @@
                       "color": "green",
                       "click_event": {
                         "action": "run_command",
-                        "command": "/function uhc:options/game_rules/fire_tick_true"
+                        "command": "/function uhc:settings/game_rules/fire_spread_true"
                       }
                     },
                     {
@@ -508,7 +508,7 @@
                       "color": "red",
                       "click_event": {
                         "action": "run_command",
-                        "command": "/function uhc:options/game_rules/fire_tick_false"
+                        "command": "/function uhc:settings/game_rules/fire_spread_false"
                       }
                     },
                     "\n",
@@ -525,7 +525,7 @@
                       "color": "green",
                       "click_event": {
                         "action": "run_command",
-                        "command": "/function uhc:options/game_rules/friendly_fire_true"
+                        "command": "/function uhc:settings/game_rules/hurt_own_team_true"
                       }
                     },
                     {
@@ -537,7 +537,36 @@
                       "color": "red",
                       "click_event": {
                         "action": "run_command",
-                        "command": "/function uhc:options/game_rules/friendly_fire_false"
+                        "command": "/function uhc:settings/game_rules/hurt_own_team_false"
+                      }
+                    },
+                    "\n",
+                    {
+                      "text": "Locator Bar:",
+                      "color": "black",
+                      "hover_event": {
+                        "action": "show_text",
+                        "value": "The locator bar feature is used. Default: No/False."
+                      }
+                    },
+                    {
+                      "text": " Yes",
+                      "color": "green",
+                      "click_event": {
+                        "action": "run_command",
+                        "command": "/function uhc:settings/game_rules/locator_bar_true"
+                      }
+                    },
+                    {
+                      "text": "/",
+                      "color": "black"
+                    },
+                    {
+                      "text": "No",
+                      "color": "red",
+                      "click_event": {
+                        "action": "run_command",
+                        "command": "/function uhc:settings/game_rules/locator_bar_false"
                       }
                     },
                     "\n",
@@ -554,7 +583,7 @@
                       "color": "green",
                       "click_event": {
                         "action": "run_command",
-                        "command": "/function uhc:options/game_rules/patrol_spawning_true"
+                        "command": "/function uhc:settings/game_rules/spawn_patrols_true"
                       }
                     },
                     {
@@ -566,7 +595,7 @@
                       "color": "red",
                       "click_event": {
                         "action": "run_command",
-                        "command": "/function uhc:options/game_rules/patrol_spawning_false"
+                        "command": "/function uhc:settings/game_rules/spawn_patrols_false"
                       }
                     },
                     "\n",
@@ -583,7 +612,7 @@
                       "color": "green",
                       "click_event": {
                         "action": "run_command",
-                        "command": "/function uhc:options/game_rules/phantom_spawning_true"
+                        "command": "/function uhc:settings/game_rules/spawn_phantoms_true"
                       }
                     },
                     {
@@ -595,7 +624,7 @@
                       "color": "red",
                       "click_event": {
                         "action": "run_command",
-                        "command": "/function uhc:options/game_rules/phantom_spawning_false"
+                        "command": "/function uhc:settings/game_rules/spawn_phantoms_false"
                       }
                     },
                     "\n",
@@ -612,7 +641,7 @@
                       "color": "green",
                       "click_event": {
                         "action": "run_command",
-                        "command": "/function uhc:options/game_rules/raids_true"
+                        "command": "/function uhc:settings/game_rules/raids_true"
                       }
                     },
                     {
@@ -624,7 +653,7 @@
                       "color": "red",
                       "click_event": {
                         "action": "run_command",
-                        "command": "/function uhc:options/game_rules/raids_false"
+                        "command": "/function uhc:settings/game_rules/raids_false"
                       }
                     },
                     "\n",
@@ -641,7 +670,7 @@
                       "color": "green",
                       "click_event": {
                         "action": "run_command",
-                        "command": "/function uhc:options/game_rules/regeneration_true"
+                        "command": "/function uhc:settings/game_rules/natural_health_regeneration_true"
                       }
                     },
                     {
@@ -653,7 +682,7 @@
                       "color": "red",
                       "click_event": {
                         "action": "run_command",
-                        "command": "/function uhc:options/game_rules/regeneration_false"
+                        "command": "/function uhc:settings/game_rules/natural_health_regeneration_false"
                       }
                     },
                     "\n",
@@ -670,7 +699,7 @@
                       "color": "green",
                       "click_event": {
                         "action": "run_command",
-                        "command": "/function uhc:options/game_rules/trader_true"
+                        "command": "/function uhc:settings/game_rules/spawn_wandering_traders_true"
                       }
                     },
                     {
@@ -682,7 +711,36 @@
                       "color": "red",
                       "click_event": {
                         "action": "run_command",
-                        "command": "/function uhc:options/game_rules/trader_false"
+                        "command": "/function uhc:settings/game_rules/spawn_wandering_traders_false"
+                      }
+                    },
+                    "\n",
+                    {
+                      "text": "Wardens:",
+                      "color": "black",
+                      "hover_event": {
+                        "action": "show_text",
+                        "value": "Wardens can spawn. Default: Yes/True."
+                      }
+                    },
+                    {
+                      "text": " Yes",
+                      "color": "green",
+                      "click_event": {
+                        "action": "run_command",
+                        "command": "/function uhc:settings/game_rules/spawn_wardens_true"
+                      }
+                    },
+                    {
+                      "text": "/",
+                      "color": "black"
+                    },
+                    {
+                      "text": "No",
+                      "color": "red",
+                      "click_event": {
+                        "action": "run_command",
+                        "command": "/function uhc:settings/game_rules/spawn_wardens_false"
                       }
                     }
                   ]
@@ -717,7 +775,7 @@
                       "color": "#d9b35c",
                       "click_event": {
                         "action": "run_command",
-                        "command": "/function uhc:options/marker/15"
+                        "command": "/function uhc:settings/markers/minute/15"
                       }
                     },
                     {
@@ -725,7 +783,7 @@
                       "color": "#d9b35c",
                       "click_event": {
                         "action": "run_command",
-                        "command": "/function uhc:options/marker/20"
+                        "command": "/function uhc:settings/markers/minute/20"
                       }
                     },
                     {
@@ -733,7 +791,7 @@
                       "color": "#d9b35c",
                       "click_event": {
                         "action": "run_command",
-                        "command": "/function uhc:options/marker/30"
+                        "command": "/function uhc:settings/markers/minute/30"
                       }
                     },
                     {
@@ -741,7 +799,7 @@
                       "color": "#d9b35c",
                       "click_event": {
                         "action": "run_command",
-                        "command": "/function uhc:options/marker/60"
+                        "command": "/function uhc:settings/markers/minute/60"
                       }
                     },
                     "\n\n",
@@ -763,7 +821,7 @@
                       "color": "#d9b35c",
                       "click_event": {
                         "action": "run_command",
-                        "command": "/function uhc:options/border_updates/5"
+                        "command": "/function uhc:settings/markers/border_status/5"
                       }
                     },
                     {
@@ -771,7 +829,7 @@
                       "color": "#d9b35c",
                       "click_event": {
                         "action": "run_command",
-                        "command": "/function uhc:options/border_updates/10"
+                        "command": "/function uhc:settings/markers/border_status/10"
                       }
                     },
                     {
@@ -779,7 +837,7 @@
                       "color": "#d9b35c",
                       "click_event": {
                         "action": "run_command",
-                        "command": "/function uhc:options/border_updates/15"
+                        "command": "/function uhc:settings/markers/border_status/15"
                       }
                     },
                     {
@@ -791,7 +849,7 @@
                       },
                       "click_event": {
                         "action": "run_command",
-                        "command": "/function uhc:options/border_updates/clear"
+                        "command": "/function uhc:settings/markers/border_status/clear"
                       }
                     },
                     "\n\n",
@@ -813,7 +871,7 @@
                       "color": "#d9b35c",
                       "click_event": {
                         "action": "run_command",
-                        "command": "/function uhc:options/gentlemensrule/20"
+                        "command": "/function uhc:settings/gentleman_rule/20"
                       }
                     },
                     {
@@ -821,7 +879,7 @@
                       "color": "#d9b35c",
                       "click_event": {
                         "action": "run_command",
-                        "command": "/function uhc:options/gentlemensrule/40"
+                        "command": "/function uhc:settings/gentleman_rule/40"
                       }
                     },
                     {
@@ -829,7 +887,7 @@
                       "color": "#d9b35c",
                       "click_event": {
                         "action": "run_command",
-                        "command": "/function uhc:options/gentlemensrule/60"
+                        "command": "/function uhc:settings/gentleman_rule/60"
                       }
                     },
                     {
@@ -841,7 +899,7 @@
                       },
                       "click_event": {
                         "action": "run_command",
-                        "command": "/function uhc:options/gentlemensrule/clear"
+                        "command": "/function uhc:settings/gentleman_rule/clear"
                       }
                     },
                     "\n\n",
@@ -863,7 +921,7 @@
                       "color": "#7f3202",
                       "click_event": {
                         "action": "run_command",
-                        "command": "/function uhc:options/eternaltime/day"
+                        "command": "/function uhc:settings/eternal_time/day"
                       }
                     },
                     {
@@ -875,7 +933,7 @@
                       "color": "#7f3202",
                       "click_event": {
                         "action": "run_command",
-                        "command": "/function uhc:options/eternaltime/night"
+                        "command": "/function uhc:settings/eternal_time/night"
                       }
                     },
                     {
@@ -890,7 +948,7 @@
                       },
                       "click_event": {
                         "action": "run_command",
-                        "command": "/function uhc:options/eternaltime/clear"
+                        "command": "/function uhc:settings/eternal_time/clear"
                       }
                     },
                     "\n",
@@ -899,7 +957,7 @@
                       "color": "#d9b35c",
                       "click_event": {
                         "action": "run_command",
-                        "command": "/function uhc:options/eternaltime/0"
+                        "command": "/function uhc:settings/eternal_time/minutes/0"
                       }
                     },
                     {
@@ -907,7 +965,7 @@
                       "color": "#d9b35c",
                       "click_event": {
                         "action": "run_command",
-                        "command": "/function uhc:options/eternaltime/20"
+                        "command": "/function uhc:settings/eternal_time/minutes/20"
                       }
                     },
                     {
@@ -915,7 +973,7 @@
                       "color": "#d9b35c",
                       "click_event": {
                         "action": "run_command",
-                        "command": "/function uhc:options/eternaltime/40"
+                        "command": "/function uhc:settings/eternal_time/minutes/40"
                       }
                     },
                     {
@@ -923,7 +981,7 @@
                       "color": "#d9b35c",
                       "click_event": {
                         "action": "run_command",
-                        "command": "/function uhc:options/eternaltime/60"
+                        "command": "/function uhc:settings/eternal_time/minutes/60"
                       }
                     },
                     {
@@ -931,7 +989,7 @@
                       "color": "#d9b35c",
                       "click_event": {
                         "action": "run_command",
-                        "command": "/function uhc:options/eternaltime/80"
+                        "command": "/function uhc:settings/eternal_time/minutes/80"
                       }
                     },
                     {
@@ -939,7 +997,7 @@
                       "color": "#d9b35c",
                       "click_event": {
                         "action": "run_command",
-                        "command": "/function uhc:options/eternaltime/100"
+                        "command": "/function uhc:settings/eternal_time/minutes/100"
                       }
                     },
                     {
@@ -947,7 +1005,7 @@
                       "color": "#d9b35c",
                       "click_event": {
                         "action": "run_command",
-                        "command": "/function uhc:options/eternaltime/120"
+                        "command": "/function uhc:settings/eternal_time/minutes/120"
                       }
                     }
                   ]
@@ -964,7 +1022,7 @@
                       },
 											"click_event": {
 												"action": "run_command",
-												"command": "/function uhc:border/pregeneration/pregen"
+												"command": "/function uhc:lobby/world_pregeneration/pregen"
 
 											}
                     },
@@ -983,7 +1041,7 @@
                       "color": "#d9b35c",
                       "click_event": {
                         "action": "run_command",
-                        "command": "/function uhc:border/start/4096"
+                        "command": "/function uhc:settings/world_border/starting_size/4096"
                       }
                     },
                     {
@@ -991,7 +1049,7 @@
                       "color": "#d9b35c",
                       "click_event": {
                         "action": "run_command",
-                        "command": "/function uhc:border/start/2048"
+                        "command": "/function uhc:settings/world_border/starting_size/2048"
                       }
                     },
                     {
@@ -999,7 +1057,7 @@
                       "color": "#d9b35c",
                       "click_event": {
                         "action": "run_command",
-                        "command": "/function uhc:border/start/1024"
+                        "command": "/function uhc:settings/world_border/starting_size/1024"
                       }
                     },
                     {
@@ -1007,7 +1065,7 @@
                       "color": "#d9b35c",
                       "click_event": {
                         "action": "run_command",
-                        "command": "/function uhc:border/start/512"
+                        "command": "/function uhc:settings/world_border/starting_size/512"
                       }
                     },
                     "\n\n",
@@ -1025,7 +1083,7 @@
                       "color": "#d9b35c",
                       "click_event": {
                         "action": "run_command",
-                        "command": "/function uhc:border/end/256"
+                        "command": "/function uhc:settings/world_border/final_size/256"
                       }
                     },
                     {
@@ -1033,7 +1091,7 @@
                       "color": "#d9b35c",
                       "click_event": {
                         "action": "run_command",
-                        "command": "/function uhc:border/end/128"
+                        "command": "/function uhc:settings/world_border/final_size/128"
                       }
                     },
                     {
@@ -1041,7 +1099,7 @@
                       "color": "#d9b35c",
                       "click_event": {
                         "action": "run_command",
-                        "command": "/function uhc:border/end/64"
+                        "command": "/function uhc:settings/world_border/final_size/64"
                       }
                     },
                     {
@@ -1049,7 +1107,7 @@
                       "color": "#d9b35c",
                       "click_event": {
                         "action": "run_command",
-                        "command": "/function uhc:border/end/32"
+                        "command": "/function uhc:settings/world_border/final_size/32"
                       }
                     },
                     {
@@ -1057,7 +1115,7 @@
                       "color": "#d9b35c",
                       "click_event": {
                         "action": "run_command",
-                        "command": "/function uhc:border/end/16"
+                        "command": "/function uhc:settings/world_border/final_size/16"
                       }
                     },
                     "\n\n",
@@ -1075,7 +1133,7 @@
                       "color": "#d9b35c",
                       "click_event": {
                         "action": "run_command",
-                        "command": "/function uhc:border/shrink/20"
+                        "command": "/function uhc:settings/world_border/shrink_begins/20"
                       }
                     },
                     {
@@ -1083,7 +1141,7 @@
                       "color": "#d9b35c",
                       "click_event": {
                         "action": "run_command",
-                        "command": "/function uhc:border/shrink/40"
+                        "command": "/function uhc:settings/world_border/shrink_begins/40"
                       }
                     },
                     {
@@ -1091,7 +1149,7 @@
                       "color": "#d9b35c",
                       "click_event": {
                         "action": "run_command",
-                        "command": "/function uhc:border/shrink/60"
+                        "command": "/function uhc:settings/world_border/shrink_begins/60"
                       }
                     },
                     {
@@ -1099,7 +1157,7 @@
                       "color": "#d9b35c",
                       "click_event": {
                         "action": "run_command",
-                        "command": "/function uhc:border/shrink/80"
+                        "command": "/function uhc:settings/world_border/shrink_begins/80"
                       }
                     },
                     {
@@ -1107,7 +1165,7 @@
                       "color": "#d9b35c",
                       "click_event": {
                         "action": "run_command",
-                        "command": "/function uhc:border/shrink/100"
+                        "command": "/function uhc:settings/world_border/shrink_begins/100"
                       }
                     },
                     "\n\n",
@@ -1125,7 +1183,7 @@
                       "color": "#d9b35c",
                       "click_event": {
                         "action": "run_command",
-                        "command": "/function uhc:border/duration/20"
+                        "command": "/function uhc:settings/world_border/shrink_duration/20"
                       }
                     },
                     {
@@ -1133,7 +1191,7 @@
                       "color": "#d9b35c",
                       "click_event": {
                         "action": "run_command",
-                        "command": "/function uhc:border/duration/40"
+                        "command": "/function uhc:settings/world_border/shrink_duration/40"
                       }
                     },
                     {
@@ -1141,7 +1199,7 @@
                       "color": "#d9b35c",
                       "click_event": {
                         "action": "run_command",
-                        "command": "/function uhc:border/duration/60"
+                        "command": "/function uhc:settings/world_border/shrink_duration/60"
                       }
                     },
                     {
@@ -1149,7 +1207,7 @@
                       "color": "#d9b35c",
                       "click_event": {
                         "action": "run_command",
-                        "command": "/function uhc:border/duration/80"
+                        "command": "/function uhc:settings/world_border/shrink_duration/80"
                       }
                     },
                     {
@@ -1157,7 +1215,7 @@
                       "color": "#d9b35c",
                       "click_event": {
                         "action": "run_command",
-                        "command": "/function uhc:border/duration/100"
+                        "command": "/function uhc:settings/world_border/shrink_duration/100"
                       }
                     }
                   ]
@@ -1179,7 +1237,7 @@
                       "color": "black",
                       "click_event": {
                         "action": "run_command",
-                        "command": "/function uhc:options/clear_scoreboard_display"
+                        "command": "/function uhc:settings/scoreboards/clear_scoreboard_display"
                       }
                     },
                     "\n",
