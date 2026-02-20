@@ -4,7 +4,7 @@
 execute as @a[tag=!uhc.joined] run function #uhc:lobby/player_join
 
 loot replace entity @a hotbar.0 loot uhc:book
-execute store result score PlayerCount uhc.lobby if entity @a[tag=uhc.player]
+execute store result score PlayerCount uhc.lobby if entity @a[tag=!uhc.spectator]
 execute store result score AdminCount uhc.lobby if entity @a[gamemode=creative]
 
 kill @e[type=item,x=-25,y=250,z=-25,dx=51,dy=5,dz=51]
