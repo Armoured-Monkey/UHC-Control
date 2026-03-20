@@ -41,7 +41,7 @@ scoreboard objectives remove uhc.stats
 scoreboard objectives remove uhc.pregen
 
 # Reset attributes for online players
-execute as @a run function uhc:reset_attributes
+execute as @a run function uhc:game/reset_attributes
 
 # Remove Tags for online Players
 tag @a remove uhc.player
