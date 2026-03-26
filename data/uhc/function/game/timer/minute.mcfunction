@@ -29,7 +29,5 @@ execute if score shrink uhc.border <= minutes uhc.timer if score border_status u
 execute store result score AlivePlayers uhc.stats if entity @a[tag=uhc.player]
 execute store result score Spectators uhc.stats if entity @a[tag=uhc.spectator]
 
-effect give @a[team=uhc.spec] night_vision infinite 1 true
-
 # Schedule
 schedule function #uhc:game/minute 60s

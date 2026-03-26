@@ -114,8 +114,8 @@ weather clear
 
 # Set default world border options and orient world border around 0,0
 worldborder center 0 0
-worldborder damage buffer 4
-worldborder warning distance 24
+worldborder damage buffer 3
+worldborder warning distance 25
 
 # Announce
 tellraw @s {"text":"                                                                                ","color":"#7f3202","strikethrough":true}

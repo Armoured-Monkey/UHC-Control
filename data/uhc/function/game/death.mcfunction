@@ -6,7 +6,7 @@ gamemode spectator @s
 team join uhc.spec @s
 tag @s remove uhc.player
 tag @s add uhc.spectator
-
+effect give @s night_vision infinite 1 true
 # Run death sound for all players
 execute at @a run playsound minecraft:block.trial_spawner.spawn_mob master @a[tag=!uhc.mute_sounds] ~ ~ ~ 0.5 1
 
