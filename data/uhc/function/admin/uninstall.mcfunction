@@ -1,9 +1,10 @@
-# Unistall and remove physical traces of the data pack.
+# Description: Unistall and remove physical traces of the data pack.
+# Called by: Admin through function tag.
 
 # Remove Scheduled Functions
-schedule clear uhc:timer/second
-schedule clear uhc:lobby/second
-schedule clear uhc:timer/minute
+schedule clear #uhc:game/second
+schedule clear #uhc:lobby/second
+schedule clear #uhc:game/minute
 
 # Set lobby to air
 execute positioned 0 255 0 run fill ~-25 250 ~-25 ~24 253 ~24 air
@@ -40,12 +41,14 @@ scoreboard objectives remove uhc.stats
 scoreboard objectives remove uhc.pregen
 
 # Reset attributes for online players
-execute as @a run function uhc:reset_attributes
+execute as @a run function uhc:game/reset_attributes
 
 # Remove Tags for online Players
 tag @a remove uhc.player
 tag @a remove uhc.spectator
 tag @a remove uhc.attributes_reset
+tag @a remove uhc.mute_sounds
+tag @a remove uhc.joined
 
 # Delete Storage
 data remove storage minecraft:uhc_control announce_advancements
@@ -56,6 +59,8 @@ data remove storage minecraft:uhc_control phantoms_spawn
 data remove storage minecraft:uhc_control raids
 data remove storage minecraft:uhc_control regeneration
 data remove storage minecraft:uhc_control traders_spawn
+data remove storage minecraft:uhc_control locator_bar
+data remove storage minecraft:uhc_control spawn_wardens
 data remove storage minecraft:uhc_control eternal
 data remove storage minecraft:uhc_control expansions
 

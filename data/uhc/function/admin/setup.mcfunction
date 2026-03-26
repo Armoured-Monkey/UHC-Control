@@ -1,6 +1,5 @@
-# Setup command
-# Called by: user
-# 
+# Description: Sets up the UHC game. Creates lobby, teams, scoreboards, and world settings.
+# Called by: Admin through function tag.
 
 # Scoreboards
 # Lobby Scoreboard Information Display.
@@ -80,13 +79,13 @@ team add uhc.11
 team modify uhc.11 color dark_aqua
 team add uhc.12
 team modify uhc.12 color dark_blue
-# -1 spectators - black
+# -1 spectators - gray
 team add uhc.spec
 team modify uhc.spec color gray
 
 scoreboard players set marker uhc.timer 0
 
-function uhc:options/default_settings
+function uhc:settings/default_settings
 
 # Generate the lobby and centre world on 0,0 
 gamemode spectator @a
@@ -94,27 +93,29 @@ setworldspawn 0 253 0
 tp @a 0 260 0
 execute positioned 0 255 0 run fill ~-25 250 ~-25 ~24 253 ~24 barrier hollow
 execute positioned 0 255 0 run fill ~-24 253 ~-24 ~23 253 ~23 air
-schedule function #uhc:lobby_second 1t
+schedule function #uhc:lobby/second 1t
 gamemode survival @a
-function uhc:display_entities/summon_display_entities
+function uhc:lobby/display_entities/summon
 
 # World settings for whilst in lobby. These are reset upon game start.
-gamerule commandBlockOutput false
-gamerule spectatorsGenerateChunks true
-execute in minecraft:the_nether run gamerule spectatorsGenerateChunks true
-gamerule randomTickSpeed 0
-gamerule doDaylightCycle false
-gamerule spawnRadius 0
-gamerule fallDamage false
+gamerule minecraft:command_block_output false
+gamerule minecraft:spectators_generate_chunks true
+execute in minecraft:the_nether run gamerule minecraft:spectators_generate_chunks true
+gamerule minecraft:random_tick_speed 0
+gamerule minecraft:advance_time false
+gamerule minecraft:respawn_radius 0
+gamerule minecraft:fall_damage false
+gamerule minecraft:pvp false
+execute in minecraft:the_nether run gamerule minecraft:pvp false
 time set noon
 difficulty peaceful
-gamerule doWeatherCycle false
+gamerule minecraft:advance_weather false
 weather clear
 
 # Set default world border options and orient world border around 0,0
 worldborder center 0 0
-worldborder damage buffer 20
-worldborder warning distance 20
+worldborder damage buffer 3
+worldborder warning distance 25
 
 # Announce
 tellraw @s {"text":"                                                                                ","color":"#7f3202","strikethrough":true}

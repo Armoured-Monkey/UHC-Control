@@ -1,0 +1,8 @@
+# Patrol Spawning True/Yes
+playsound minecraft:ui.button.click master @p[tag=!uhc.mute_sounds] ~ ~ ~
+gamerule minecraft:spawn_patrols true
+execute in minecraft:the_nether run gamerule minecraft:spawn_patrols true
+data modify storage uhc_control patrol_spawning set value "True"
+kill @e[nbt={UUID:[I;1214489126,1669417638,-2121055645,-1811742084]}]
+summon text_display 0.5 252.5 -24.0 {text:[{"text":"Spawn Pillager Patrols: ","color":"#7f3202","bold":false},{"storage":"uhc_control","interpret":true,"nbt":"patrol_spawning","color":"#d9b35c"}],alignment:"center",background:0,transformation:[2,0,0,0,0,2,0,0,0,0,2,0,0,0,0,1],billboard:"fixed",Tags:[uhc.display],UUID:[I;1214489126,1669417638,-2121055645,-1811742084]}
+title @p actionbar {"text":"Spawn Patrols: True", "color":"#E25903"}
