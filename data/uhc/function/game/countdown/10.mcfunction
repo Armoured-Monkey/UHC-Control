@@ -38,5 +38,5 @@ execute at @a run playsound minecraft:block.note_block.pling master @a[tag=!uhc.
 
 # Clear the lobby and display entities
 schedule clear #uhc:lobby/second
-execute positioned 0 255 0 run fill ~-25 250 ~-25 ~24 253 ~24 air
+execute positioned 0 255 0 run fill ~-25 250 ~-25 ~24 255 ~24 air
 kill @e[tag=uhc.display]

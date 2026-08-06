@@ -91,8 +91,8 @@ function uhc:settings/default_settings
 gamemode spectator @a
 setworldspawn 0 253 0
 tp @a 0 260 0
-execute positioned 0 255 0 run fill ~-25 250 ~-25 ~24 253 ~24 barrier hollow
-execute positioned 0 255 0 run fill ~-24 253 ~-24 ~23 253 ~23 air
+execute positioned 0 255 0 run fill ~-25 250 ~-25 ~24 255 ~24 barrier hollow
+execute positioned 0 255 0 run fill ~-24 255 ~-24 ~23 255 ~23 air
 schedule function #uhc:lobby/second 1t
 gamemode survival @a
 function uhc:lobby/display_entities/summon

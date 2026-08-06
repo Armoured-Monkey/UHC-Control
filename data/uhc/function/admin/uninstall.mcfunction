@@ -7,7 +7,7 @@ schedule clear #uhc:lobby/second
 schedule clear #uhc:game/minute
 
 # Set lobby to air
-execute positioned 0 255 0 run fill ~-25 250 ~-25 ~24 253 ~24 air
+execute positioned 0 255 0 run fill ~-25 250 ~-25 ~24 255 ~24 air
 kill @e[tag=uhc.display]
 
 # Delete Teams
